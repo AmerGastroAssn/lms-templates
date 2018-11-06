@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <title>LMS UIkit Templates</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="./css/main.css" />
+    <script src="./js/main.js"></script>
+    <!--~ FontAwesome 5 ~-->
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum"
+          crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <!--~ Navbar ~-->
+    <nav class="uk-navbar-container"
+         uk-navbar>
+
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="/">Components</a></li>
+          <li>
+            <a href="#">Dropdown Hover</a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="/layouts.html">Layouts</a></li>
+                <li><a href="/">Components</a></li>
+                <li><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Item</a></li>
+        </ul>
+
+      </div>
+
+      <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="#">Active</a></li>
+          <li>
+            <a href="#">Hover Dropdown</a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Item</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <br>
+    <br>
+
+    <!--~ Side Panel with Text And Card ~-->
+    <div class="uk-container">
+      <div class="uk-child-width-expand@s"
+           uk-grid>
+        <div class="uk-grid-item-match">
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3>Happy Halloween</h3>
+            <div class="uk-position-relative uk-visible-toggle uk-light"
+                 uk-slideshow>
+
+              <ul class="uk-slideshow-items uk-background-cover">
+                <li>
+                  <img data-src="https://placezombie.com/640x360"
+                       width="1800"
+                       height="1200"
+                       alt=""
+                       uk-cover
+                       uk-img="target: !.uk-slideshow-items">
+                </li>
+                <li>
+                  <img data-src="https://cdn3.movieweb.com/i/article/n0aVwbgDNHwy6rN15CeDoFzCaiFRdN/798:50/Halloween-Movie-2018-Nick-Castle-Michael-Myers-Scenes.jpg"
+                       width="1800"
+                       height="1200"
+                       alt=""
+                       uk-cover
+                       uk-img="target: !.uk-slideshow-items">
+                </li>
+                <li>
+                  <img data-src="http://www.trbimg.com/img-5b03d8ac/turbine/fl-pn-zombie-alert-lake-worth-20180521"
+                       width="1800"
+                       height="1200"
+                       alt=""
+                       uk-cover
+                       uk-img="target: !.uk-slideshow-items">
+                </li>
+              </ul>
+
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover"
+                 href="#"
+                 uk-slidenav-previous
+                 uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover"
+                 href="#"
+                 uk-slidenav-next
+                 uk-slideshow-item="next"></a>
+
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Zombie Details</h3>
+          <table class="uk-table uk-table-hover uk-table-divider">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td>The Ring Lady</td>
+                <td>1,000,000 years and Counting</td>
+              </tr>
+              <tr>
+                <td>Michael Meyers</td>
+                <td>Doesn't matter bc he doesn't die</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <!--~ Match Hight Card Grid ~-->
+    <div class="uk-container">
+      <h3>Matched Hight 3 Column Cards</h3>
+      <br>
+    </div>
+    <div class="uk-grid-match uk-child-width-expand@s uk-text-center"
+         uk-grid>
+      <div>
+        <div class="uk-card uk-card-primary uk-card-body">Some Info Here</div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">Notice Cards are same height<br>...</div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-primary uk-card-body">Four rows, but cards are same height<br>...<br>...<br>...</div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
