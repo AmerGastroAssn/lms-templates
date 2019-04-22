@@ -84,16 +84,26 @@
         }
 
         .btn-orange {
-            background-color: orange;
-            color: white
+            background-color: orange !important;
+            color: white !important
         }
 
         .btn-orange:hover {
-            background: rgb(212, 144, 18)
+            background: rgb(212, 144, 18) !important
         }
 
         .card-case {
             margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .right-panel {
+                order: 1;
+                margin-bottom: 20px;
+            }
+            .left-panel {
+                order: 2
+            }
         }
     </style>
 </head>
@@ -102,10 +112,11 @@
 
 
     <div class="row">
-        <!-- Left Side Content -->
-        <div class="col-md-7">
             <h1>2019 Freston Conference: Food at teh intersection of Gut Health and Disease</h1>
 
+        <!-- Left Side Content -->
+        <div class="col-md-7 left-panel">
+           
             <!-- Live Meeting -->
             <button class="btn btn-orange float-right"><i class="fas fa-external-link-alt"></i> Register</button>
             <h5 class="text-primary">Live meeting</h5>
@@ -184,20 +195,20 @@
         </div>
 
         <!-- Right Side Card Content -->
-        <div class="col-md-2">
+        <div class="col-md-5 right-panel">
             <!-- * Accomidations * -->
             <div class="container mt-3">
                 <div class="row">
                     <div class="card text-light card-case" style="background-color:rgb(25, 36, 51); width: 20rem">
-                        <img src="./images/live-header-img.png" class="card-img-top" alt="card header image">
+                        <img src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/NPPA_2019.jpg" class="card-img-top" alt="card header image">
                         <div class="card-body">
-                            <i class="fas fa-user text-warning fa-2x"></i>
-                            <p class="card-text pt-3">NPs/PAs, patient care physicians, training directors/GI division
+                            
+                            <p class="card-text pt-3"> <i class="fas fa-user text-warning fa-2x"></i> NPs/PAs, patient care physicians, training directors/GI division
                                 chiefs</p>
-                            <i class="fas fa-calendar-alt text-warning fa-2x""></i>
-                            <p class=" card-text pt-3">Chicago, IL</p>
-                                <i class="far fa-calendar-alt text-warning fa-2x"></i>
-                                <p class="card-text pt-3">August 9-10, 2019</p>
+                            
+                            <p class=" card-text pt-3"> <i class="fas fa-calendar-alt text-warning fa-2x""></i> Chicago, IL</p>
+                               
+                                <p class="card-text pt-3"> <i class="far fa-calendar-alt text-warning fa-2x"></i> August 9-10, 2019</p>
                         </div>
                     </div>
                 </div>
