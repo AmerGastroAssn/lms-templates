@@ -1,0 +1,194 @@
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous"> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> <style type="text/css"> .row { border-bottom: none; } a, a:link, .btn-link { color: #018FD5; } a:hover, a:link:hover { color: #1E385A; } .btn-link:hover { text-decoration: none; } .btn:focus { background-color: transparent; color: #018FD5; text-decoration: none; } a.btn.btn-dark:hover { background-color: #FAA61A !important; color: #fff !important; border: 1px solid #FAA61A; } .btn-orange-card:hover { background-color: #FAA61A !important; border: 1px solid #ffffff !important; color: #ffffff !important; } .btn-green-card:hover { background-color: #66952C !important; border: 1px solid #ffffff !important; color: #ffffff !important; } .btn-orange-on-blue:hover { background-color: #018FD5 !important; border: 1px solid #018FD5 !important; color: #ffffff !important; } </style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 pt-2">
+            <p>Join your peers to improve your teaching skills with systems and strategies from expert faculty leaders. This session is held in conjunction with Digestive Disease Week® (DDW) 2019.</p>
+            <p>A portion of time will also be dedicated to colonoscopy education tools and presentations from the 2018 academy grants recipients.</p>
+
+            <p><strong>Faculty:</strong></p>
+            <p>Sheryl Pfeil, MD, AGAF<br>
+                Chair, Academy of Educators          <!--<p class="text-center">
+          <a href="https://www.clinicaloptions.com/hepatitis/programs/nash-hot-topics/nash-diagnosis" target="_blank" class="btn btn-dark" style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px;"> <i class="fa fa-external-link"></i> Archived audio / slideset</a>
+        </p>-->        </p>
+        </div>
+
+        <!--Blue Box-->
+        <div class="col-md-5">
+            <div class="card" style="background-color:#1F2D40; color:#fcfcfc; border-radius:0;">
+                <div class="card-body">
+                    <ul class="list-group" style="background-color:#1F2D40; border:none; padding:0 10px;">
+                        <li class="list-group-item" style="background-color:#1F2D40; border:none; padding:0 10px;">
+                            <i class="fa fa-user" style="color:#FAA61A;"></i>&nbsp; Patient care physicians, Researchers, Training directors/GI division chiefs.
+                            <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #2A3C56;">
+                        </li>
+                        <li class="list-group-item" style="background-color:#1F2D40; border:none; padding:0 10px;">
+                            <i class="fa fa-map-marker-alt" style="color:#FAA61A;"></i>&nbsp; San Diego, CA.  <br>
+                            &nbsp; 31A, San Diego Convention Center
+                            <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #2A3C56;">
+                        </li>
+                        <li class="list-group-item" style="background-color:#1F2D40; border:none; padding:0 10px;">
+                            <i class="fa fa-calendar-alt" style="color:#FAA61A;"></i>&nbsp; Tuesday, May 21, 8-9:30 a.m.
+                            <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #2A3C56;">
+                        </li>
+                        <!--<li class="list-group-item" style="background-color:#1F2D40; border:none; padding:0 10px;">
+                            <i class="fa fa-calendar-alt" style="color:#FAA61A;"></i>&nbsp; Expires: March 31, 2020</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--End blue box-->
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mt-3 mb-3">
+                    <div class="card-body" style="background-color:#018FD5; color:#fcfcfc;">
+                        <h4>Learning objectives</h4>
+                        <p><i class="fa fa-check"></i> &nbsp; Define program recruitment priorities and develop targeted strategies to achieve them.</p>
+                        <p><i class="fa fa-check"></i> &nbsp; Describe recruitment tactics that allow a program to showcase its talents and diversity to prospective applicants.</p>
+                        <p><i class="fa fa-check"></i> &nbsp; Outline the approach in the scoring and ranking of applicants for a successful match.</p>
+                        <p><i class="fa fa-check"></i> &nbsp; Describe the available metrics to evaluate polypectomy performance, including direct observation of polypectomy skills [DOPyS].</p>
+                        <p><i class="fa fa-check"></i> &nbsp; Describe the impact on clinical outcomes of teaching interventions to improve polyp recognition and differentiation.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-4 mb-5 pt-4">
+    <div class="container text-center">
+        <div class="card" style="background-color:#1F2D40; color:#ffffff;">
+            <div class="card-body">
+
+
+                <h3 class="pb-5">Pricing</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 offset-2">
+                            <div class="card text-center" style="background-color:#FAA61A; color:#fcfcfc;">
+                                <div class="card-body">
+                                    <h2 class="card-title pb-2">Member</h2>
+                                    <hr style="border:0; height:0; border-top:1px solid #EA8C04; border-bottom:1px solid #FFBD40;">
+                                    <h3 class="card-subtitle mb-2" style="color:#7c4e04;"><i class="fa fa-dollar-sign"></i>&nbsp; Free</h3>
+                                    <p class="card-text">You must be registered for DDW to attend</p>
+                                    <!--  <hr style="border:0; height:0; border-top:1px solid #EA8C04; border-bottom:1px solid #FFBD40;">
+                                    <!-- <h3 class="card-subtitle mb-2" style="color:#FFDB7F;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                     <p class="card-text">Some quick example</p>
+                                     <hr style="border:0; height:0; border-top:1px solid #EA8C04; border-bottom:1px solid #FFBD40;">
+                                     <h3 class="card-subtitle mb-2" style="color:#FFDB7F;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                     <p class="card-text">Some quick example</p>
+
+                                     <button href="#" class="btn btn-default btn-orange-card m-1" style="color:#fff; background-color:#7c4e04; border-radius:0; border:1px solid #7c4e04;">
+                                         <i class="fa fa-external-link"></i> ##Buy Now!
+                                     </button>-->
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center" style="background-color:#66952D; color:#fcfcfc;">
+                                <div class="card-body">
+                                    <h2 class="card-title pb-2">Nonmember</h2>
+                                    <hr style="border:0; height:0; border-top:1px solid #547B25; border-bottom:1px solid #72A732;">
+                                    <h3 class="card-subtitle mb-2" style="color:#2f4414;"><i class="fa fa-dollar-sign"></i>&nbsp; Free</h3>
+
+                                    <p class="card-text">You must be registered for DDW to attend</p>
+                                    <!--<hr style="border:0; height:0; border-top:1px solid #547B25; border-bottom:1px solid #72A732;">
+                                    <!--<h3 class="card-subtitle mb-2" style="color:#84C13A;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                    <p class="card-text">Some quick example</p>
+                                    <hr style="border:0; height:0; border-top:1px solid #547B25; border-bottom:1px solid #72A732;">
+                                    <h3 class="card-subtitle mb-2" style="color:#84C13A;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                    <p class="card-text">Some quick example</p>
+
+
+                                    <button href="#" class="btn btn-default btn-green-card m-1" style="color:#fff; background-color:#2f4414; border-radius:0; border:1px solid #2f4414;">
+                                        <i class="fa fa-external-link"></i> ##Buy Now!
+                                    </button>-->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--<div class="col-md-4">
+                            <div class="card text-center" style="background-color:#018FD5; color:#fcfcfc;">
+                                <div class="card-body">
+                                    <h2 class="card-title pb-2">Early Bird</h2>
+                                    <hr style="border:0; height:0; border-top:1px solid #017CB7; border-bottom:1px solid #019EEB;">
+                                    <h3 class="card-subtitle mb-2" style="color:#014663;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                    <p class="card-text">Some quick example</p>
+                                    <hr style="border:0; height:0; border-top:1px solid #017CB7; border-bottom:1px solid #019EEB;">
+                                    <h3 class="card-subtitle mb-2" style="color:#76CDFF;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                    <p class="card-text">Some quick example</p>
+                                    <hr style="border:0; height:0; border-top:1px solid #017CB7; border-bottom:1px solid #019EEB;">
+                                    <h3 class="card-subtitle mb-2" style="color:#76CDFF;"><i class="fa fa-dollar-sign"></i> ***.**</h3>
+                                    <p class="card-text">Some quick example</p>
+
+
+                                    <button href="#" class="btn btn-default btn-blue-card m-1" style="color:#fff; background-color:#014663; border-radius:0; border:1px solid #014663;">
+                                        <i class="fa fa-external-link"></i> ##Buy Now!
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--<div class="row p-5">
+                    <div class="col-md-12 text-left">
+                        <h5>Not an AGA member?</h5>
+                        <p>Submit a completed membership application with your conference registration and pay the AGA
+                            member rate. Nonmember trainees must complete the trainee certification form before
+                            registering.</p>
+                        <p>*If applying for AGA membership, your application must be received no later than June 4,
+                            2018, to qualify for the AGA member early rate.</p>
+                        <p>**If applying for AGA membership, your application must be received no later than July 30,
+                            2018, to qualify for the AGA member standard rate.</p>
+
+                        <h5>Cancellation policy</h5>
+                        <p>A refund (minus a $50 processing fee) will be given for cancellations received in writing on
+                            or before Wednesday, Aug. 1, 2018. Please send requests to AGA Member Relations via email
+                            (member@gastro.org), fax (301-272-1774) or mail (4930 Del Ray Avenue, Bethesda, MD
+                            20814).</p>
+                        <p>No cancellations will be accepted for refunds after Aug. 1, 2018. Refunds cannot be made for
+                            no-shows.</p>
+
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row pt-5">
+    <div class="container-fluid">
+        <h3 class="text-center mb-5">Sponsored by</h3>
+
+        <!--class="col-md-3"-->
+        <p>AGA Institute Education &amp; Training Committee.</p>
+
+
+
+
+
+    </div>
+</div>
+
+
+<div class="row pt-5">
+    <div class="container">
+        <hr>
+        <p>For questions or help, please email <a href="mailto:academyedu@gastro.org">academyedu@gastro.org</a>.</p>
+    </div>
+</div>
