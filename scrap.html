@@ -1,494 +1,180 @@
-<!--~ FontAwesome 5 ~-->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--~ FontAwesome 5 ~-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<style type="text/css">
-    .row {
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag  -->
+    <style type="text/css">
+      .row {
         border-bottom: none;
-    }
+      }
 
-    a, a:link, .btn-link {
-        color: #018FD5;
-    }
+      a,
+      a:link,
+      .btn-link {
+        color: #018fd5;
+      }
 
-    a:hover, a:link:hover {
-        color: #1E385A;
-    }
+      a:hover,
+      a:link:hover {
+        color: #1e385a;
+      }
 
-    .btn-link:hover {
+
+
+      .title-color {
+        color: #1e385a;
+      }
+
+      .btn-link:hover {
         text-decoration: none;
-    }
+      }
 
-    .btn:focus {
+      .btn:focus {
         background-color: transparent;
-        color: #018FD5;
+        color: #018fd5;
         text-decoration: none;
-    }
+      }
 
-    a.btn.btn-dark:hover {
-        background-color: #FAA61A !important;
+      a.btn.btn-dark:hover {
+        background-color: #faa61a !important;
         color: #fff !important;
-        border: 1px solid #FAA61A;
-    }
-</style>
+        border: 1px solid #faa61a !important;
+      }
 
+      .btn-orange-card:hover {
+        background-color: #faa61a !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
 
-<!--~ Tabs ~-->
+      .btn-green-card:hover {
+        background-color: #66952c !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
 
-<div class="row">
-    <div class="container">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item active">
-                <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true" aria-expanded="true">Details</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="agenda-tab" data-toggle="tab" href="#agenda" role="tab" aria-controls="agenda" aria-selected="false">Agenda</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Faculty</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <!--~ Tab 1 ~-->
-            <div class="tab-pane fade show active in" id="details" role="tabpanel" aria-labelledby="details-tab">
-                <!--~ Tab 1 ~-->
-                <div class="row">
-                    <div class="col-md-7 pt-5">
-                        <p>
-                            <a href="#" class="btn btn-dark" style="background-color:#1E385A; color:#fff; border-radius:0;"><i class="fa fa-hammer"></i> Register for workshop</a>
-                        </p>
+      .btn-orange-on-blue:hover {
+        background-color: #018fd5 !important;
+        border: 1px solid #018fd5 !important;
+        color: #ffffff !important;
+      }
 
-                        <p>
-                            <a href="http://netforum.gastro.org/eweb/DynamicPage.aspx?WebCode=AGAFreeEventReg&amp;WizardKey=602458ab-ddf7-4ecc-b7af-67f0f7f3975b&amp;WizardStep=46B9738C-C795-4B99-8E4C-636EC880691B&amp;Action=Add&amp;REg_evt_key=459f0b6b-9231-428b-be3b-e630aa92c8de" class="btn btn-dark" style="background-color:#1E385A; color:#fff; border-radius:0;">
-                                <i class="fa fa-video"></i> Register for live webcast</a>
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #8fb0c6;
+      }
 
-                        </p><p>This AGA Regional Practice Skills workshop is a free course that addresses the needs of
-                        fellows and early career gastroenterologists considering their career options. The workshop
-                        is open to members and nonmembers.</p>
+      .btn-orange {
+        background-color: orange !important;
+        color: white !important;
+      }
 
-                        <p>The workshop provides fellows with insights on life in private practice, life in academia and
-                            other career opportunities. Attendees will also gain practical knowledge on key topics such
-                            as contract negotiations, billing/coding, health care policy and other topics that can help
-                            to enhance their career. Work/life balance and financial management as an early career
-                            professional are also addressed.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="card" style="background-color:#1E385A; color:#fcfcfc; border-radius:0;">
-                            <div class="card-body">
-                                <ul class="list-group" style="background-color:#1E385A; border:none; padding:0 10px;">
-                                    <li class="list-group-item" style="background-color:#1E385A; border:none; padding:0 10px;">
-                                        <i class="fa fa-user" style="color:#FAA61A;"></i> ## Audience Goes HERE
-                                        <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #25446E;">
-                                    </li>
-                                    <li class="list-group-item" style="background-color:#1E385A; border:none; padding:0 10px;">
-                                        <i class="fa fa-map-marker-alt" style="color:#FAA61A;"></i> Columbus, Ohio
-                                        <!--<span style="color:#FAA61A;">Location</span> -->
+      .btn-orange:hover {
+        background: rgb(212, 144, 18) !important;
+      }
 
-                                        <!--<ul style="list-style-type:none;">-->
-                                        <!--<li>James Cancer Hospital and- Solove Research</li>-->
-                                        <!--<li>Institute Wasserstrom Auditorium</li>-->
-                                        <!--<li>The Ohio State University</li>-->
-                                        <!--<li>Columbus, OH 43210</li>-->
-                                        <!--</ul>-->
-                                        <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #25446E;">
-                                    </li>
-                                    <li class="list-group-item" style="background-color:#1E385A; border:none; padding:0 10px;">
-                                        <i class="fa fa-calendar-alt" style="color:#FAA61A;"></i> Feb. 16, 2019
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      .card-case {
+        margin: 0 auto;
+      }
 
+      .card-text {
+        color: #FFFFFF;
+      }
 
-                <div class="row mt-4">
-                    <div class="container text-center">
-                        <h3 class="pb-5">Pricing</h3>
-                        <div class="row">
-                            <div class="col-md-4 offset-md-2">
-                                <div class="card text-center" style="background-color:#FAA61A; color:#fcfcfc;">
-                                    <div class="card-body">
-                                        <h2 class="card-title">Member</h2>
-                                        <hr style="border:0; height:0; border-top:1px solid #EA8C04; border-bottom:1px solid #FFBD40;">
-                                        <h3 class="card-subtitle mb-2 mt-1" style="color:#7c4e04;"><i class="fa fa-dollar-sign"></i> Free</h3>
-                                        <!--<p class="card-text">Some quick example</p>-->
+      .contentLeft {
+        color: #212529;
+      }
+    </style>
+  
 
-                                        <button href="#" class="btn btn-default m-1 mt-3" style="color:#fff; background-color:#7c4e04; border-radius:0; border:1px solid #7c4e04;">
-                                            <i class="fa fa-cart-plus"></i> Buy Now!
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card text-center" style="background-color:#66952D; color:#fcfcfc;">
-                                    <div class="card-body">
-                                        <h2 class="card-title">Non-Member</h2>
-                                        <hr style="border:0; height:0; border-top:1px solid #547B25; border-bottom:1px solid #72A732;">
-                                        <h3 class="card-subtitle mb-2 mt-1" style="color:#2f4414;"><i class="fa fa-dollar-sign"></i> Free</h3>
-                                        <!--<p class="card-text">Some quick example</p>-->
-
-                                        <button href="#" class="btn btn-default m-1 mt-3" style="color:#fff; background-color:#2f4414; border-radius:0; border:1px solid #2f4414;">
-                                            <i class="fa fa-cart-plus"></i> Buy Now!
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!--~ Tab 2 ~-->
-            <div class="tab-pane fade" id="agenda" role="tabpanel" aria-labelledby="agenda-tab">
-
-                <!--~ Accordian ~-->
-                <div class="row mt-5 mb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h2>Schedule</h2>
-                                <div class="accordion" id="dayOne">
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    <i class="fa fa-caret-down"></i>
-                                                    Program agenda (tentative):
-                                                </button>
-                                            </h5>
-                                        </div>
-
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#dayOne">
-                                            <div class="card-body">
-                                                <table class="table table-borderless table-responsive">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            8-8:45 a.m.
-                                                        </td>
-                                                        <td>
-                                                            Continental Breakfast
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            8:45-9 a.m.
-                                                        </td>
-                                                        <td>
-                                                            Welcome <br>
-                                                            Stephanie Pointer, MD <br>
-                                                            Darrell M. Gray, II, MD, MPH
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <i class="fa fa-caret-down"></i> Session 1: Choosing a Practice an
-                                                Gastroenterology
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#dayOne">
-                                        <div class="card-body">
-                                            <table class="table table-borderless table-responsive">
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        9-9:20 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Life as a Clinical Scholar
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        9:20-9:40 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Life as a Clinician Educator
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        9:40-10 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Life as a Clinician Educator
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        10-10:15 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Break
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <i class="fa fa-caret-down"></i> Session 2: Planning for Career and
-                                                Financial Security
-
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#dayOne">
-                                        <div class="card-body">
-                                            <table class="table table-borderless table-responsive">
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        10:15-10:45 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Interpreting and Negotiating Your Contract
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        10:45-11:15 a.m.
-                                                    </td>
-                                                    <td>
-
-                                                        Introduction to Practice Management: Tips for Quality
-                                                        Measurement, Patient Satisfaction, Coding and Billing
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        11:15-11:45 a.m.
-                                                    </td>
-                                                    <td>
-                                                        Planning for Personal Financial Success
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        11:45 a.m.-12:15 p.m.
-                                                    </td>
-                                                    <td>
-                                                        Lunch/Networking
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header" id="headingFour">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                <i class="fa fa-caret-down"></i> Session 3: Planning for Personal and
-                                                Career Happiness
-
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#dayOne">
-                                        <div class="card-body">
-                                            <table class="table table-borderless table-responsive">
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        12:15-12:35 p.m.
-
-                                                    </td>
-                                                    <td>
-
-                                                        Strategies to Combat Burnout in GI and Maintaining Work/Life
-                                                        Balance
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        12:35-12:55 p.m.
-                                                    </td>
-                                                    <td>
-                                                        Health Care Reform and GI Forecast
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        12:55-1:15 p.m.
-                                                    </td>
-                                                    <td>
-                                                        360 Degree Leadership in the Workplace
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        1:15 p.m.
-                                                    </td>
-                                                    <td>
-                                                        Closing Remarks
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <!--~ Tab 3 ~-->
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <h3 class="pt-5 pb-3">Course Co-Directors</h3>
-                <!--~ Profiles ~-->
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <div class="media">
-                            <img class="mr-3 img-fluid img-thumbnail" src="https://lh4.googleusercontent.com/-nbY83xxUeGY/AAAAAAAAAAI/AAAAAAAAAAs/NLU_xdb66yE/photo.jpg" style="max-width:8rem;" alt="Generic placeholder image">
-                            <div class="media-body">
-                                <h5 class="mt-0">Stephanie Pointer, MD</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="media">
-                            <img class="mr-3 img-fluid img-thumbnail" src="https://healthsystem.osumc.edu/digitalservices/api/v1/ProviderPicture/4015" style="max-width:8rem;" alt="Generic placeholder image">
-                            <div class="media-body">
-                                <h5 class="mt-0">Darrell M. Gray, II, MD, MPH</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- * Testimonials * -->
-<div class="row">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card mt-3 mb-3">
-                    <div class="card-body p-5" style="background-color:#008FD5; color:#fcfcfc;">
-                        <h4>Testimonials</h4>
-                        <p><i class="fa fa-check fa-lg"></i>
-                            Great opportunity to discuss topics not directly covered in fellowship...
-                            personal interaction with fellows and faculty was great.
-                        </p>
-                        <p><i class="fa fa-check fa-lg"></i> This was a comprehensive skills workshop that was
-                            very well organized and pertinent to career decision making progress for
-                            fellows.</p>
-                        <p><i class="fa fa-check fa-lg"></i> This workshop was instrumental in bringing to the
-                            forefront various pertinent topics and issues GI trainees are faced with
-                            when looking towards next steps in our careers. Phenomenal.</p>
-                        <p><i class="fa fa-check fa-lg"></i> As a 1st year resident, I thought this workshop
-                            would be over my head but it was extremely applicable to people at all
-                            levels of training.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- * Accomidations * -->
-<div class="container">
+  
     <div class="row">
-        <div class="card" style="background-color:#F9F9F9;">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-8 p-5">
-                        <!--<h3 class="pb-3 text-center">Recommended Accomodations</h3>-->
-                        <h4><i class="fa fa-map-marker-alt" style="color:#FAA61A;"></i> Where:</h4>
-                        <ul style="list-style-type:none;">
-                            <li><b>James Cancer Hospital and Solove Research Institute Wasserstrom Auditorium</b></li>
-                            <li>The Ohio State University</li>
-                            <li>460 West 10th Avenue - Room L035</li>
-                            <li>Columbus, OH 43210</li>
-                            <li><i>Note: Free parking is available.</i></li>
-                        </ul>
-                        <h4><i class="fa fa-clock" style="color:#FAA61A;"></i> When:</h4>
-                        <ul style="list-style-type:none;">
-                            <li>Feb. 16, 2019, 8 a.m. to 1 p.m. EST</li>
-                            <li>Members: Free</li>
-                            <li>Nonmembers: Free</li>
-                        </ul>
-
-                        <h4><i class="fa fa-envelope" style="color:#FAA61A;"></i> Contact</h4>
-                        <ul style="list-style-type:none;">
-                            <li>For registration-related questions, contact AGA Member Relation at <a href="mailto:member@gastro.org">member@gastro.org</a>
-                            </li>
-                            <li>For questions regarding the program, contact Carol Brown at <a href="mailto:cbrown@gastro.org">cbrown@gastro.org</a>.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://static1.squarespace.com/static/545e77bfe4b03a44d115a278/5701c69720c647bc94276202/5701c69720c647bc94276203/1459734184772/9904-17.jpg" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      <!-- Left Side Content -->
+      <div class="col-md-7 contentLeft">
+        <!-- Webinar -->
+        <!-- Copy & Paste Start -->
+        
+            <!-- Description -->
+            <p style="color: #212529;">Learn what’s new in nonalcoholic steatohepatitis (NASH). Hear from leading experts in endocrinology and gastroenterology as they discuss the hottest topics surrounding diagnosing and treating patients with NASH/non-alcoholic fatty liver disease (NAFLD).</p>
+            <p><strong>Past webinar</strong></p>
+            <hr align="center" width="98%" size="1" noshade="">
+            <p><strong>Hot topics in NASH: Identifying and managing high-risk patients with NASH</strong></p>
+            <p><strong>Faculty:</strong><br>
+              Brent A. Neuschwander-Tetri, MD</p>
 
 
-<!-- * Sponsors * -->
-<div class="row pt-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Sponsors</h2>
+            <p><a href="https://www.clinicaloptions.com/hepatitis/programs/nash-hot-topics/high-risk-patients" class="btn btn-orange"><i class="fa fa-external-link"></i>  Downloadable audio / slideset </a></p>
+
+            <!-- Learning Objectives -->
+            <h5 class="title-color">Learning objectives</h5>
+            <ul>
+              <li>
+                Evaluate risk and apply appropriate methodology to characterize NAFLD and diagnose NASH in individual patients.
+              </li>
+              <li>
+                Apply best practices in the management of patients with NAFLD based on evolving data on lifestyle modification and medical treatment.
+              </li>
+              <li>
+                Critically evaluate data on emerging therapies for NASH, including evidence of reversal of fibrosis, risks and benefits, and their potential utility in the treatment of patients with NASH.
+              </li>
+              <li>
+                Demonstrate an understanding of clinical trial design and evaluation of endpoints in the setting of NAFLD/NASH.
+              </li>
+            </ul>
+
+
+            <h5 class="title-color">Cosponsored by</h5>
+            <p>Provided by AGA in partnership with the Endocrine Society and Clinical Care Options.</p>
+            <p>Supported by education grants from Gilead Sciences, Inc. and Intercept Pharmaceuticals, Inc.</p>
+
+
+        <!-- Copy & Paste End  -->
+
         <div class="row">
-            <div class="col-md-3">
-                <img src="https://s3.amazonaws.com/DDW/ddw-org/images/logo-aasld.png" alt="" class="img-fluid" style="padding-top:2em;">
-            </div>
-            <div class="col-md-3">
-                <img src="https://s3.amazonaws.com/DDW/ddw-org/images/AGA_Logo_Horizontal_RGB.png" alt="" class="img-fluid" style="padding-top:4em;">
-            </div>
-            <div class="col-md-3">
-                <img src="https://s3.amazonaws.com/DDW/ddw-org/images/logo-asge.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3">
-                <img src="https://s3.amazonaws.com/DDW/ddw-org/images/logo-ssat.png" alt="" class="img-fluid">
-            </div>
+          <div class="container">
+            <hr>
+            <p>Need help? Contact <a href="mailto:customersupport@clinicaloptions.com?subject=Hot%20Topics%20in%20Nash" target="_blank">customersupport@clinicaloptions.com</a>.</p>
+          </div>
         </div>
+      </div>
+
+      <!-- Right Side Card Content -->
+      <div class="col-md-5">
+        <!-- * Accomidations * -->
+
+        <div class="container mt-3">
+          <div class="row ">
+            <div class="card text-light card-case" style="background-color:rgb(25, 36, 51); width: 20rem">
+              <img src="https://s3.amazonaws.com/aga-lms-assets/images/NASH_image-1551725187317.png" class="card-img-top" alt="card header image">
+              <div class="card-body">
+                <p class="card-text pt-3">
+                  <i class="far fa-hourglass text-warning fa-2x"></i>
+                  Time to complete: 45 minutes
+                </p>
+
+                <p class="card-text pt-3">
+                  <i class="fas fa-calendar-alt text-warning fa-2x"></i>
+                  Released: Dec. 6, 2018
+                </p>
+
+                <p class="card-text pt-3">
+                  <i class="fas fa-calendar-alt text-warning fa-2x"></i>
+
+                  Expires: March 31, 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
-<div class="row pt-5">
-    <div class="container">
-        <hr>
-        <h4>If you have any questions please email the AGA Education Deptartment.</h4>
-    </div>
-</div>
-
-
-<br>
+    <br>

@@ -2,32 +2,35 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible"
-          content="ie=edge" />
-    <title>On Demand</title>
+          content="ie=edge">
+    <title>Document</title>
     <!--~ FontAwesome 5 ~-->
     <link rel="stylesheet"
           href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
-          crossorigin="anonymous" />
+          crossorigin="anonymous">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous" />
+          crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Include the above in your HEAD tag  -->
     <style type="text/css">
@@ -38,16 +41,17 @@
       a,
       a:link,
       .btn-link {
-        color: #018fd5;
+        color: #018FD5;
       }
 
       a:hover,
       a:link:hover {
-        color: #1e385a;
+        color: #1E385A;
       }
 
       .title-color {
-        color: #1e385a;
+        color: #1E385A;
+
       }
 
       .btn-link:hover {
@@ -56,7 +60,7 @@
 
       .btn:focus {
         background-color: transparent;
-        color: #018fd5;
+        color: #018FD5;
         text-decoration: none;
       }
 
@@ -71,40 +75,40 @@
       }
 
       a.btn.btn-dark:hover {
-        background-color: #faa61a !important;
+        background-color: #FAA61A !important;
         color: #fff !important;
-        border: 1px solid #faa61a !important;
+        border: 1px solid #FAA61A !important;
       }
 
       .btn-orange-card:hover {
-        background-color: #faa61a !important;
+        background-color: #FAA61A !important;
         border: 1px solid #ffffff !important;
         color: #ffffff !important;
       }
 
       .btn-green-card:hover {
-        background-color: #66952c !important;
+        background-color: #66952C !important;
         border: 1px solid #ffffff !important;
         color: #ffffff !important;
       }
 
       .btn-orange-on-blue:hover {
-        background-color: #018fd5 !important;
-        border: 1px solid #018fd5 !important;
+        background-color: #018FD5 !important;
+        border: 1px solid #018FD5 !important;
         color: #ffffff !important;
       }
 
       .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #8fb0c6;
+        background-color: #8FB0C6;
       }
 
       .btn-orange {
-        background-color: orange !important;
-        color: white !important;
+        background-color: orange;
+        color: white
       }
 
       .btn-orange:hover {
-        background: rgb(212, 144, 18) !important;
+        background: rgb(212, 144, 18)
       }
 
       .card-case {
@@ -114,105 +118,91 @@
   </head>
 
   <body>
+
+
     <div class="row">
       <!-- Left Side Content -->
       <div class="col-md-7">
+        <!-- Copy & Paste Start -->
+
+        <!-- Tabs Navigation -->
         <nav>
           <div class="nav nav-tabs"
                id="nav-tab"
                role="tablist">
             <a class="nav-item nav-link active"
-               id="nav-tab-one"
+               id="nav-home-tab"
                data-toggle="tab"
-               href="#nav-one"
+               href="#nav-home"
                role="tab"
-               aria-controls="nav-one"
-               aria-selected="true">Details</a>
+               aria-controls="nav-home"
+               aria-selected="true">Description</a>
             <a class="nav-item nav-link"
-               id="nav-tab-two"
+               id="nav-profile-tab"
                data-toggle="tab"
-               href="#nav-two"
+               href="#nav-profile"
                role="tab"
-               aria-controls="nav-two"
+               aria-controls="nav-profile"
                aria-selected="false">Pricing</a>
-            <a class="nav-item nav-link"
-               id="nav-tab-three"
-               data-toggle="tab"
-               href="#nav-three"
-               role="tab"
-               aria-controls="nav-three"
-               aria-selected="false">Three</a>
+
           </div>
         </nav>
+
+        <!-- Tabs Contents -->
         <div class="tab-content"
              id="nav-tabContent">
           <div class="tab-pane fade show active"
-               id="nav-one"
+               id="nav-home"
                role="tabpanel"
-               aria-labelledby="nav-tab-one">
-            <!-- Tab One -->
-            <p>Tab One</p>
-
+               aria-labelledby="nav-home-tab">
+            <p>In collaboration with Rhonda Buckholtz, vice president of ICD-10 education and training at AAPC, AGA has
+              developed easy to use translation guides for the top 50 most used GI-related diagnostic codes — one ranked
+              alphabetically by disease state and the other ranked numerically by ICD-9-CM code. The guides are free to
+              AGA members to view and download the pdf. Nonmembers can purchase either version of the translation guide
+              for $25 each.&nbsp;<strong>The guides can only be downloaded and are not mailed.</strong></p>
           </div>
-          <!--~ Tab Two ~-->
           <div class="tab-pane fade"
-               id="nav-two"
+               id="nav-profile"
                role="tabpanel"
-               aria-labelledby="nav-tab-two">
-            <!-- Tab Two Content -->
+               aria-labelledby="nav-profile-tab">
+
+            <!-- Pricing -->
+
             <table width="50%"
                    cellpadding="0"
                    cellspacing="0"
-                   class="table table-bordered">
+                   class="table table-bordered table-responsive">
               <thead>
                 <tr style="background-color:#102033; color:#FFFFFF;">
                   <th width="226"
                       align="left"
-                      scope="col">
-                    Early bird <span style="color:#108CCE;">(by May 21, 2019)</span>
-                  </th>
+                      scope="col">Member</th>
                   <th width="190"
                       align="left"
-                      scope="col">Regular rate</th>
+                      scope="col">Nonmember</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="table-primary">
-                  <td colspan="2">Member</td>
-                </tr>
                 <tr>
-                  <td>$75</td>
-                  <td>$90</td>
-                </tr>
-                <tr>
-                  <td colspan="2"
-                      class="table-primary">Nonmember</td>
-                </tr>
-                <tr>
-                  <td>$90</td>
-                  <td>$105</td>
+                  <td>Free (Sign in to access)</td>
+                  <td>$25 (To purchase, click "Buy Now" near the top of this page)</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <!--~ Tab Three ~-->
-          <div class="tab-pane fade"
-               id="nav-three"
-               role="tabpanel"
-               aria-labelledby="nav-tab-three">
-            <!-- Tab Three Content -->
-            <p>Tab Three</p>
-          </div>
         </div>
+        <!-- Copy & Paste End  -->
 
 
-        <div class="row pt-5">
+
+
+
+        <div class="row">
           <div class="container">
             <hr>
-            <p>If you have any questions please email the <a href="mailto:education@gastro.org">AGA Education
-                Department</a>.
-            </p>
+            <p>For issues with purchase, please <a href="#">email AGA Member Relations and Constituency
+                Programs</a>.</p>
           </div>
         </div>
       </div>
@@ -220,42 +210,28 @@
       <!-- Right Side Card Content -->
       <div class="col-md-5">
         <!-- * Accomidations * -->
+
         <div class="container mt-3">
           <div class="row ">
             <div class="card text-light card-case"
                  style="background-color:rgb(25, 36, 51); width: 20rem">
-              <img src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/NPPA_2019.jpg"
+              <img src="https://s3.amazonaws.com/aga-lms-assets/images/file.jpeg"
                    class="card-img-top"
-                   alt="card header image" />
+                   alt="card header image">
               <div class="card-body">
-                <p class="card-text pt-3">
-                  <i class="fas fa-alarm-clock text-warning fa-2x"></i> Time to Complete: 30 minutes
+                <p class="card-text pt-3"><i class="fas fa-calendar-alt text-warning fa-2x"></i> Released: Oct. 1, 2013
                 </p>
-                <p class="card-text pt-3">
-                  <i class="fas fa-calendar text-warning fa-2x"></i> Released: July 19, 2017
-                </p>
-
-                <p class="card-text pt-3">
-                  <i class="fas fa-calendar-alt text-warning fa-2x"></i> Credit Expires: July 19, 2019
-                </p>
-
-                <p class="card-text pt-3">
-                  <a href="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/resources/BIOSIM01_Considerations_Biosimiliars_Financial_Disclosures.pdf"
-                     target="_blank">
-                    <button class="btn btn-light btn-orange-on-blue"
-                            style="background-color:#FAA61A; border:1px solid #FAA61A; border-radius:0;"> Disclosures
-                    </button>
-                  </a>
-                </p>
-
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <br />
+
+    <br>
+
   </body>
 
 </html>

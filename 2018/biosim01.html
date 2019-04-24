@@ -1,0 +1,474 @@
+<link rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+      crossorigin="anonymous">
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style type="text/css">
+  .row {
+    border-bottom: none;
+  }
+
+  a,
+  a:link,
+  .btn-link {
+    color: #018FD5;
+  }
+
+  a:hover,
+  a:link:hover {
+    color: #1E385A;
+  }
+
+  .btn-link:hover {
+    text-decoration: none;
+  }
+
+  .btn:focus {
+    background-color: transparent;
+    color: #018FD5;
+    text-decoration: none;
+  }
+
+  a.btn.btn-dark:hover {
+    background-color: #FAA61A !important;
+    color: #fff !important;
+    border: 1px solid #FAA61A !important;
+  }
+
+  .btn-orange-card:hover {
+    background-color: #FAA61A !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  .btn-green-card:hover {
+    background-color: #66952C !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  .btn-blue-card:hover {
+    background-color: #018FD5 !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  .btn-orange-on-blue:hover {
+    background-color: #018FD5 !important;
+    border: 1px solid #018FD5 !important;
+    color: #ffffff !important;
+  }
+</style>
+<div class="container mb-5">
+  <div class="row">
+    <ul class="nav nav-tabs"
+        id="myTab"
+        role="tablist">
+      <li class="nav-item active">
+        <a class="nav-link active show"
+           id="home-tab"
+           data-toggle="tab"
+           href="#home"
+           role="tab"
+           aria-controls="home"
+           aria-expanded="true"
+           aria-selected="true">Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           id="profile-tab"
+           data-toggle="tab"
+           href="#profile"
+           role="tab"
+           aria-controls="profile"
+           aria-expanded="false"
+           aria-selected="false">Credit Information</a>
+      </li>
+      <!--<li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-expanded="false" aria-selected="false">Faculty</a>
+            </li>-->
+      <li class="nav-item">
+        <a class="nav-link"
+           id="instructions-tab"
+           data-toggle="tab"
+           href="#instructions"
+           role="tab"
+           aria-controls="instructions"
+           aria-expanded="false"
+           aria-selected="false">Resources</a>
+      </li>
+    </ul>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="tab-content"
+         id="myTabContent">
+      <div class="tab-pane fade show active in"
+           id="home"
+           role="tabpanel"
+           aria-labelledby="home-tab">
+        <!--~ Tab 1 ~-->
+        <div class="row">
+          <div class="col-md-7">
+            <p class="mt-1">In this on demand webcast, Stephen B. Hanauer, MD, AGAF and David T. Rubin, MD, AGAF provide
+              an overview of the current body of knowledge on the safety and efficacy of biosimilar products. Biosimilar
+              pricing is explored, as well as the impact of payor decisions on clinical GI practice. This activity is a
+              collaboration of the AGA Institute and the Crohn's and Colitis Foundation.</p>
+            <p>This program is supported by independent educational grants from Boehringer Ingelheim Pharmaceuticals,
+              Inc. and Pfizer.</p>
+            <p class="pt-4 text-center">
+              <a href="http://agau.gastro.org/diweb/gateway/init/1/f/catalog*2Fitem*2Feid*2FBIOSIM01"
+                 class="btn btn-dark"
+                 style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px;"> <i
+                   class="fa fa-external-link"></i> Sign in to access</a>
+            </p>
+            <p><i class="fas fa-info-circle fa-lg"></i>&nbsp;<strong><em>After you sign in, please click the "Launch"
+                  button on the top of this page to access the videos.</em></strong></p>
+          </div>
+          <div class="col-md-5">
+            <div class="card"
+                 style="background-color:#1F2D40; color:#fcfcfc; border-radius:0;">
+              <div class="card-body">
+
+                <li class="list-group-item"
+                    style="background-color:#1F2D40; border:none; padding:0 10px;">
+                  <i class="fa fa-alarm-clock"
+                     style="color:#FAA61A;"></i>&nbsp; Time to Complete:
+                  30 minutes
+                  <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #2A3C56;">
+                </li>
+                <li class="list-group-item"
+                    style="background-color:#1F2D40; border:none; padding:0 10px;">
+                  <i class="fa fa-calendar-alt"
+                     style="color:#FAA61A;"></i>&nbsp; Released: July 19,
+                  2017
+                  <hr style="border:0; height:0; border-top:1px solid #0E1A2A; border-bottom:1px solid #2A3C56;">
+                </li>
+                <li class="list-group-item"
+                    style="background-color:#1F2D40; border:none; padding:0 10px;">
+                  <i class="fa fa-calendar-alt"
+                     style="color:#FAA61A;"></i>&nbsp; Credit Expires:
+                  July 19, 2019
+                </li>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- * /End Tab 1 * -->
+      <!--~ Tab 2 ~-->
+      <div class="tab-pane fade"
+           id="profile"
+           role="tabpanel"
+           aria-labelledby="profile-tab">
+
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="mt-4">CME / Maintenance of Certification (MOC) Information</h3>
+            <p>The American Gastroenterological Association (AGA) Institute is accredited by the Accreditation Council
+              for Continuing Medical Education (ACCME) to provide continuing medical education for physicians.</p>
+            <p>The AGA Institute designates this enduring activity for a maximum of .5&nbsp;<em>AMA PRA Category 1
+                Credits</em>™. Physicians should claim only the credit commensurate with the extent of their
+              participation in the activity.</p>
+            <p>In accordance with the ACCME’s Standards for Commercial Support of Continuing Medical Education, all
+              faculty and planning partners must disclose any financial relationship(s) or other relationship(s) held
+              within the past 12 months. The AGA Institute implements a mechanism to identify and resolve all conflicts
+              of interest prior to delivering the educational activity to learners.</p>
+            <p>Successful completion of this CME activity enables the participant to earn up to .5 MOC points in the
+              American Board of Internal Medicine’s (ABIM) MOC program. Participants will earn MOC points equivalent to
+              the amount of CME credits claimed for the activity. It is the CME activity provider’s responsibility to
+              submit participant completion information to ACCME for the purpose of granting ABIM MOC points.</p>
+            <h4>Faculty Relationship and Financial Disclosures</h4>
+            <p><strong><a
+                   href="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/resources/BIOSIM01_Considerations_Biosimiliars_Financial_Disclosures.pdf"
+                   title=""
+                   target="_blank">Click here to view financial disclosures for presenters</a></strong>.</p>
+            <p><strong>Planning Committee</strong></p>
+            <p>Gary R. Lichtenstein, MD, AGAF</p>
+            <p>Consultant: Abbvie, Alaven, Celgene/Santarus/Receptos, Ferring, Hospira, Janssen Orthobiotech,
+              Luitpold/American Reagent, Pfizer, Prometheus, Salix Pharmaceuticals,</p>
+            <p>Shire, Takeda, UCB</p>
+            <p>Grant/Research Support: Celgene/Santarus/Receptos, Takeda</p>
+            <p>Honoraria: Clinical Advances in Gastroenterology, Ironwood, McMahon Publishing,</p>
+            <p>Merck, Romarck, Springer</p>
+            <p>Royalty: SLACK, Inc.</p>
+            <p><strong>AGA Staff</strong></p>
+            <p>Maura H. Davis</p>
+            <p>Disclosed no relevant financial relationships.</p>
+            <p>Monique S. Dyson, MS, CHES</p>
+            <p>Disclosed no relevant financial relationships.</p>
+            <p>Alison Kim, PhD</p>
+            <p>Disclosed no relevant financial relationships.</p>
+            <p><strong>Crohn’s &amp; Colitis Foundation Staff</strong></p>
+            <p>Orna Ehrlich</p>
+            <p>Disclosed no relevant financial relationships.</p>
+            <p>Laura Wingate</p>
+            <p>Disclosed no relevant financial relationships.</p>
+            <h4 class="pt-3">&nbsp;</h4>
+          </div>
+          <div class="col-md-5">
+            <div class="card"
+                 style="background-color:#1F2D40; color:#fcfcfc;">
+              <div class="card-body">
+                <ul class="list-group"
+                    style="background-color:#1F2D40; border:none;">
+                  <li class="list-group-item"
+                      style="background-color:#1F2D40; border:none;">
+                    <span style="color:#FAA61A;"><i class="fa fa-alarm-clock"></i></span> Expiration
+                    date: July 19, 2019
+                  </li>
+                </ul>
+                <p class="text-body text-center pt-3">
+                  <a href="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/resources/BIOSIM01_Considerations_Biosimiliars_Financial_Disclosures.pdf"
+                     target="_blank">
+                    <button class="btn btn-light btn-orange-on-blue"
+                            style="background-color:#FAA61A; border:1px solid #FAA61A; border-radius:0;"> Disclosures
+                    </button>
+                  </a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--~ Tab 3 ~-->
+      <div class="tab-pane fade"
+           id="contact"
+           role="tabpanel"
+           aria-labelledby="contact-tab">
+        <h3 class="mt-4">Course Directors</h3>
+        <!--~ Profiles ~-->
+        <div class="row mt-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <img class="mr-3 img-fluid img-thumbnail"
+                       src="https://www.uclahealth.org/pictures/PNRS/Lin-Chang.jpg"
+                       style="max-width:8rem;"
+                       alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0">Lin Chang, MD, AGAF</h5>
+                    <h6><i>Course Director</i></h6>Advisory Committee or Review Panels: Salix, Napo,
+                    Synergy, Bioamerica <br>Grant/Research Support: Ardelyx <br>Speaking and
+                    Teaching: Takeda <br>Consulting: IM Health Sciences
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <img class="mr-3 img-fluid img-thumbnail"
+                       src="https://images.franciscanhealth.org/physicians/1427029958.jpg"
+                       style="max-width:8rem;"
+                       alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0">Carl Berg, MD, AGAF, FAASLD</h5>
+                    <!--<h6><i>University</i></h6>--> Disclosed no relevant financial relationships
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-body">
+                    <h5 class="mt-0">Lin Chang, MD, AGAF</h5>
+                    <h6><i>Course Director</i></h6>Advisory Committee or Review Panels: Salix, Napo,
+                    Synergy, Bioamerica <br>Grant/Research Support: Ardelyx <br>Speaking and
+                    Teaching: Takeda <br>Consulting: IM Health Sciences
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="media-body">
+                    <h5 class="mt-0">Carl Berg, MD, AGAF, FAASLD</h5>
+                    <p>Disclosed no relevant financial relationships</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--~ Tab 4 ~-->
+      <div class="tab-pane fade"
+           id="instructions"
+           role="tabpanel"
+           aria-labelledby="instructions-tab">
+        <div class="row mt-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <br>
+                <h3 class="mt-4">Additional Resources</h3>
+
+                <ul>
+                  <li>Crohn’s &amp; Colitis Foundation: Biosimilars- What IBD Patients Should Know: <a
+                       href="http://www.crohnscolitisfoundation.org/resources/biosimilars.html"
+                       title=""
+                       target="_blank">www.crohnscolitisfoundation.org/resources/biosimilars.html</a></li>
+                </ul>
+                <ul>
+                  <li>U.S. Food &amp; Drug Administration- Information for Healthcare Professionals (Biosimilars): <a
+                       href="http://www.fda.gov/Drugs/DevelopmentApprovalProcess/HowDrugsareDevelopedandApproved/ApprovalApplications/TherapeuticBiologicApplications/Biosimilars/ucm241719.htm"
+                       title=""
+                       target="_blank">www.fda.gov/Drugs/DevelopmentApprovalProcess/<br>HowDrugsareDevelopedandApproved/
+                      ApprovalApplications/TherapeuticBiologicApplications/Biosimilars/ucm241719.htm</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <div class="card mt-3 mb-3">
+          <div class="card-body"
+               style="background-color:#018FD5; color:#fcfcfc;">
+            <h4>Learning objectives</h4>
+            <p><i class="fa fa-check"></i> &nbsp; Appreciate the landscape that has contributed to the emergence of
+              biosimilars in the U.S. IBD market </p>
+            <p><i class="fa fa-check"></i> &nbsp; Gain clarity on the definition of biosimilars and the abbreviated FDA
+              approval pathway</p>
+            <p><i class="fa fa-check"></i> &nbsp; Appreciate the rationale for extrapolation of indications</p>
+            <p><i class="fa fa-check"></i> &nbsp; Know that no biosimilar has received an interchangeable designation
+            </p>
+            <p><i class="fa fa-check"></i> &nbsp; Consider the clinical scenarios in which biosimilars may be utilized
+              safely</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="row mt-4 mb-5 pt-4">
+    <div class="container text-center">
+        
+
+    </div>
+</div>-->
+
+
+<div class="row mt-4 mb-5 pt-4">
+  <div class="container text-center">
+    <div class="card"
+         style="background-color:#1F2D40; color:#ffffff;">
+      <div class="card-body">
+
+
+        <h3 class="pb-5">Pricing</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 offset-md-2">
+              <div class="card text-center"
+                   style="background-color:#FAA61A; color:#fcfcfc;">
+                <div class="card-body">
+                  <h2 class="card-title pb-2">Member</h2>
+                  <hr style="border:0; height:0; border-top:1px solid #EA8C04; border-bottom:1px solid #FFBD40;">
+                  <h3 class="card-subtitle mb-2"
+                      style="color:#7c4e04;"><i class="fa fa-dollar-sign"></i>&nbsp;Free</h3>
+                  <p class="card-text">Sign in to access</p>
+
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center"
+                   style="background-color:#66952D; color:#fcfcfc;">
+                <div class="card-body">
+                  <h2 class="card-title pb-2">Nonmember</h2>
+                  <hr style="border:0; height:0; border-top:1px solid #547B25; border-bottom:1px solid #72A732;">
+                  <h3 class="card-subtitle mb-2"
+                      style="color:#2f4414;"><i class="fa fa-dollar-sign"></i> Free</h3>
+                  <p class="card-text">Sign in to access</p>
+
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="row pt-5">
+  <div class="container">
+    <hr>
+    <p>If you have any questions please email the <a href="mailto:education@gastro.org ">AGA Education Department</a>.
+    </p>
+  </div>
+</div>
