@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Demand</title>
+    <!--~ FontAwesome 5 ~-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag  -->
+    <style type="text/css">
+      .row {
+        border-bottom: none;
+      }
+
+      a,
+      a:link,
+      .btn-link {
+        color: #018fd5;
+      }
+
+      a:hover,
+      a:link:hover {
+        color: #1e385a;
+      }
+
+      .title-color {
+        color: #1e385a;
+      }
+
+      .btn-link:hover {
+        text-decoration: none;
+      }
+
+      .btn:focus {
+        background-color: transparent;
+        color: #018fd5;
+        text-decoration: none;
+      }
+
+      a.btn.btn-dark:hover {
+        background-color: #faa61a !important;
+        color: #fff !important;
+        border: 1px solid #faa61a !important;
+      }
+
+      .btn-orange-card:hover {
+        background-color: #faa61a !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
+
+      .btn-green-card:hover {
+        background-color: #66952c !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
+
+      .btn-orange-on-blue:hover {
+        background-color: #018fd5 !important;
+        border: 1px solid #018fd5 !important;
+        color: #ffffff !important;
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #8fb0c6;
+      }
+
+      .btn-orange {
+        background-color: orange !important;
+        color: white !important;
+      }
+
+      .btn-orange:hover {
+        background: rgb(212, 144, 18) !important;
+      }
+
+      .card-case {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row">
+      <!-- Left Side Content -->
+      <div class="col-md-7">
+        <!-- Book -->
+
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Description</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >Pricing</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-accommodation-tab"
+              data-toggle="tab"
+              href="#nav-accommodation"
+              role="tab"
+              aria-controls="nav-accommodation"
+              aria-selected="false"
+              >Accommodation</a
+            >
+
+            <a
+              class="nav-item nav-link"
+              id="nav-agenda-tab"
+              data-toggle="tab"
+              href="#nav-agenda"
+              role="tab"
+              aria-controls="nav-agenda"
+              aria-selected="false"
+              >Agenda</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-credit-tab"
+              data-toggle="tab"
+              href="#nav-credit"
+              role="tab"
+              aria-controls="nav-credit"
+              aria-selected="false"
+              >Faculty</a
+            >
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane  show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <!-- Description -->
+            <p>
+              The Principles of Gastroenterology for the Nurse Practitioner and
+              Physician Assistant (NPPA) is the medical industry's premiere
+              course guiding and enabling nurse practitioners and physician
+              assistants with the intricacies of identifying, treating and
+              managing GI disorders. Designed and taught by expert clinicians
+              and advanced practice providers, NPPA provides the latest
+              insights, knowledge and research on how to improve GI patient
+              care. Attendees will leave with stronger diagnostic and
+              therapeutic skills, a more robust professional network, and an
+              enhanced value for their practices.
+            </p>
+
+            <ul>
+              <li>Learn about the latest in treatment strategies.</li>
+              <li>
+                Network with our expert faculty of physicians and advanced
+                practice providers.
+              </li>
+              <li>
+                Enhance your value to the care team with best practices and
+                evidence-based medicine.
+              </li>
+            </ul>
+            <a
+              class="btn btn-dark"
+              style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px"
+              href="https://netforum.gastro.org/eweb/DynamicPage.aspx?WebCode=agaeventreg&evt_key=452c23c0-c82d-4cbf-a690-52b845b1076f"
+              ><i class="fa fa-external-link"></i> Register</a
+            >
+            <a
+              class="btn btn-dark"
+              style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px; margin-left: 20px"
+              href="http://nppa.gastro.org/"
+              ><i class="fa fa-external-link"></i>More information</a
+            >
+
+            <h5 class="title-color mt-4">Learning objectives</h5>
+            <p>
+              Upon successful completion of this continuing medical education
+              activity, learners should be able to:
+            </p>
+            <ul>
+              <li>
+                Define psychosocial treatments and their utility within GI
+                including inflammatory bowel disease (IBD).
+              </li>
+              <li>
+                Outline clinical significance, diagnosis and treatment of H.
+                pylori, including emerging concerns for antibiotic resistance.
+              </li>
+              <li>
+                Identify cost-effective and pragmatic approach to diagnosing
+                irritable bowel syndrome (IBS) and newest therapeutics (FODMAPS
+                diet, pharmacologic therapies, etc.).
+              </li>
+              <li>
+                Appraise various nutrition guidelines as pertaining to GI,
+                including lifestyle changes and dietary requirements.
+              </li>
+              <li>
+                Summarize the management of non-ulcer dyspepsia, including novel
+                therapeutic approaches.
+              </li>
+              <li>
+                Recognize diagnosis criteria for The Chicago Classification for
+                esophageal motility disorders and the appropriate indications
+                and interpretation of reflux testing.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <!-- Pricing -->
+            <table class="table table-bordered">
+              <thead>
+                <tr style="background-color:#102033; color:#FFFFFF;">
+                  <th colspan="1">Early bird <span style="color:#108CCE;">(By June 10, 2019)</span></th>
+                  <th colspan="1">Standard <span style="color:#108CCE;">(By July 31, 2019)</span></th>
+                  <th colspan="1">On-site <span style="color:#108CCE;">(By Aug. 9 & 10, 2019)</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="3" class="table-primary">
+                    AGA Member
+                  </th>
+                </tr>
+                <tr>
+                  <td>$630</td>
+                  <td>$680</td>
+                  <td>$780</td>
+                </tr>
+                <tr>
+                  <th colspan="3" class="table-primary">
+                    Nonmember
+                  </th>
+                </tr>
+                <tr>
+                  <td>$780</td>
+                  <td>$830</td>
+                  <td>$930</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- ACCOMMODATIONS -->
+          <div
+            class="tab-pane "
+            id="nav-accommodation"
+            role="tabpanel"
+            aria-labelledby="nav-accommodation-tab"
+          >
+            <div class="card text-light" style="background-color:#1F2D40;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="pb-3 text-center">
+                          Recommended accommodations
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8 p-5">
+                    <h4>
+                      <i class="fa fa-hotel" style="color:#FAA61A;"></i>
+                      Accommodations
+                    </h4>
+                    <p>
+                      The Palmer House Hilton<br />
+                      17 E. Monroe Street, Chicago, IL 60603
+                    </p>
+                    <h4>
+                      <i
+                        class="fa fa-window-maximize"
+                        style="color:#FAA61A;"
+                      ></i>
+                      Accommodations
+                    </h4>
+                    <p>
+                      A room block has been reserved for attendees at a rate of
+                      $169 (+17.4 percent tax) per night. Rooms must be reserved
+                      by July 19.
+                    </p>
+                    </p>
+                    <h4>
+                      <i
+                        class="fa fa-phone"
+                        style="color:#FAA61A;"
+                      ></i>
+                      Reservations
+                    </h4>
+                    <p>
+                    You may make your hotel reservation by calling 877-865-5321. <a href="https://book.passkey.com/gt/217258612?gtid=1b6e793c47d400967611c83001d94ec2">You may also make a reservation online</a>. Be sure to mention you are attending the 2019 AGA Principles of GI for the NP and PA.
+                    </p>
+                    <h4>
+                      <i
+                        class="fa fa-phone-slash"
+                        style="color:#FAA61A;"
+                      ></i>
+                      Cancellation
+                    </h4>
+                    <p>
+                            Cancellations must be made 72 hours prior to arrival in order to avoid charges for the full amount of the reservation. To cancel a reservation, contact the hotel directly.</p>
+                  </div>
+                  <div class="col-md-4 pt-5 pb-4">
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!-- AGENDA -->
+             <div
+             class="tab-pane "
+             id="nav-agenda"
+             role="tabpanel"
+             aria-labelledby="nav-agenda-tab"
+           >
+             <div class="accordion" id="accordionExample">
+               <!-- CARD 1 -->
+               <div class="card">
+                 <h1 class="mt-4">Friday, Aug. 9, 2019</h1>
+                 <div class="d-flex flex-nowrap">
+                        <div class="col-md-4">7:10-8:10 a.m.</div>
+                        <div class="col-md-8">
+                          Breakfast
+                        </div>
+                      </div>
+                 <div class="d-flex flex-nowrap">
+                        <div class="col-md-4"> 8:20-8:25 a.m.</div>
+                        <div class="col-md-8">
+                          Introduction
+                        </div>
+                      </div>
+                 
+                 <div class="card-header" id="headingOne">
+                   <h2 class="mb-0">
+                     <button
+                       class="btn btn-link"
+                       type="button"
+                       data-toggle="collapse"
+                       data-target="#collapseOne"
+                       aria-expanded="true"
+                       aria-controls="collapseOne"
+                     >
+                       <i class="fas fa-sort-down fa-1x "></i>
+                       Session 1: Upper GI Disorders
+                     </button>
+                   </h2>
+                 </div>
+ 
+                 <div
+                   id="collapseOne"
+                   class="collapse show"
+                   aria-labelledby="headingOne"
+                   data-parent="#accordionExample"
+                 >
+                   <!-- 1 -->
+                   <div class="card-body">
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">8:25-8:50 a.m.</div>
+                       <div class="col-md-8">
+                            How to Approach Dysphagia <br />
+                            Ikuo Hirano, MD, AGAF
+                       </div>
+                     </div>
+                     <br />
+                     <!-- 2 -->
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">8:50-9:15 a.m.</div>
+                       <div class="col-md-8">
+                            Management of GERD<br />
+                            Gwen Cassidy, APN
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">9:15-9:40 a.m.</div>
+                       <div class="col-md-8">
+                            Barrett's Esophagus <br />
+                            Neil Gupta, MD, MPH
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">9:40-10:05 a.m.</div>
+                       <div class="col-md-8">
+                            Panel Discussion
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">10:05-10:25 a.m</div>
+                       <div class="col-md-8">
+                            Break
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">10:25-10:50 a.m.</div>
+                       <div class="col-md-8">
+                            H. pylori and Non-Ulcer Dyspepsia<br />
+                            Colin Howden, MD, AGAF
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">10:50-11:15 a.m.</div>
+                       <div class="col-md-8">
+                            Upper and Lower GI Bleeding<br />
+                            Sandee Bernklau, APRN-BD, MSN, CNP
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">11:15-11:40 a.m.</div>
+                       <div class="col-md-8">
+                            Small Bowel Bleeding and Iron Deficiency Anemia<br />
+                            Adam Stein, MD
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">11:40 a.m.-12:05 p.m.</div>
+                       <div class="col-md-8">
+                            Panel Discussion
+                       </div>
+                     </div>
+                     <br />
+                     <div class="d-flex flex-nowrap">
+                       <div class="col-md-4">12:15-1:15 p.m.	
+                        </div>
+                       <div class="col-md-8">
+                            Practice Management Networking Lunch
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        <i class="fas fa-sort-down fa-1x "></i>
+                        Session 2: Diarrhea and Functional Disorders
+                      </button>
+                    </h2>
+                  </div>
+  
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >     <div class="card-body">
+                      <!-- 1 -->
+                        <div class="d-flex flex-nowrap">
+                          <div class="col-md-4">1:25-1:50 p.m.</div>
+                          <div class="col-md-8">
+                                How to Approach Acute and Chronic Diarrhea<br />
+                                Nastassja Williams, MSN, APRN, FNP-C
+                          </div>
+                        </div>
+                        <br />
+                        <!-- 2 -->
+                        <div class="d-flex flex-nowrap">
+                          <div class="col-md-4">1:50-2:15 p.m.</div>
+                          <div class="col-md-8">
+                                Celiac Disease <br />
+                                Adam Stein, MD
+                          </div>
+                        </div>
+                        <br />
+                        <!-- 3 -->
+                        <div class="d-flex flex-nowrap">
+                                <div class="col-md-4">2:15-2:40 p.m.</div>
+                                <div class="col-md-8">
+                                        Panel Discussion
+                                </div>
+                        </div>
+
+                        <br />
+                        <!-- 4 -->
+                        <div class="d-flex flex-nowrap">
+                                <div class="col-md-4">2:40-3 p.m.</div>
+                                <div class="col-md-8">
+                                        Break
+                                </div>
+                        </div>
+                        <br />
+                        <!-- 5 -->
+                        <div class="d-flex flex-nowrap">
+                                <div class="col-md-4">3-3:25 p.m.</div>
+                                <div class="col-md-8">
+                                        Constipation<br/>
+                                        Greg Sayuk, MD, MPH, AGAF
+                                </div>
+                        </div>
+                        <br/>
+                        <!-- 6 -->
+                        <div class="d-flex flex-nowrap">
+                                <div class="col-md-4">3:50-4:15 p.m.</div>
+                                <div class="col-md-8">
+                                        Role of the GI NP/PA in Outpatient<br/>
+                                        and Inpatient Management of Functional and Lower GI Disorders<br />
+                                        Amy Kassebaum, PA-C, MMS, RD
+                                </div>
+                        </div>
+                        <br />
+                        <!-- 7 -->
+                        <div class="d-flex flex-nowrap">
+                                <div class="col-md-4">4:15-4:50 p.m.</div>
+                                <div class="col-md-8">
+                                        Panel Discussion
+                                </div>
+                        </div>
+                        </div>
+
+
+                  </div>
+                  <!-- Header two end -->
+                  <h1 class="mt-4">Saturday, Aug. 10, 2018</h1>
+                  <div class="d-flex flex-nowrap">
+                        <div class="col-md-4">7:20-8:20 a.m.  </div>
+                        <div class="col-md-8">
+                                Breakfast
+                        </div>
+                </div>
+                <!-- Header three start -->
+                <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-link"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          >
+                            <i class="fas fa-sort-down fa-1x "></i>
+                            Session 3: Liver Disease
+                          </button>
+                        </h2>
+                      </div>
+      
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordionExample"
+                      >     <div class="card-body">
+                          <!-- 1 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">8:30-8:55 a.m.</div>
+                                    <div class="col-md-8">
+                                            Evaluation of Abnormal Liver Function Tests (LFTs) <br />
+                                            Steve Flamm, MD
+                                    </div>
+                            </div>
+                            <br/>
+                            <!-- 2 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">8:55-9:20 a.m.</div>
+                                    <div class="col-md-8">
+                                            Hepatitis B and C Update<br />
+                                            Steve Flamm, MD
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 3 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">9:20-9:45 a.m.</div>
+                                    <div class="col-md-8">
+                                            Update on Liver Transplantation<br />
+                                            Lisa Van Wagner, MD, MSc, RN
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 4 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">9:45-10:05 a.m.</div>
+                                    <div class="col-md-8">
+                                            Break
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 5 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">10:05-10:30 a.m.	
+                                        </div>
+                                    <div class="col-md-8">
+                                            Management of Cirrhosis<br />
+                                            Tedra Gray, APN
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 6 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">10:55-11:20 a.m.</div>
+                                    <div class="col-md-8">
+                                            Evaluation and Management of Liver Lesions and Hepatocellular Cancer<br />
+                                            Veronica Loy, DO
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 7 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">11:20-11:50 a.m.</div>
+                                    <div class="col-md-8">
+                                            Panel Discussion
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 8 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">Noon-1 p.m.</div>
+                                    <div class="col-md-8">
+                                            Lunch
+                                    </div>
+                            </div>
+                            <br />
+                            <!-- 9 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">1:10-2:10 p.m.</div>
+                                    <div class="col-md-8">
+                                            Role of Cognitive Behavioral Therapy in GI Disorders<br />
+                                            Laurie Keefer, PhD, AGAF
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Header four start -->
+                        <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                  <button
+                                    class="btn btn-link"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFour"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFour"
+                                  >
+                                    <i class="fas fa-sort-down fa-1x "></i>
+                                    Session 4A: Breakouts (Choose One) 
+                                  </button>
+                                </h2>
+                              </div>
+              
+                              <div
+                                id="collapseFour"
+                                class="collapse"
+                                aria-labelledby="headingFour"
+                                data-parent="#accordionExample"
+                              >     <div class="card-body">
+                                  <!-- 1 -->
+                                  <div class="d-flex flex-nowrap">
+                                        <div class="col-md-4">2:20-3:05 p.m.</div>
+                                        <div class="col-md-8">
+                                                Acute and Chronic Pancreatitis <br />
+                                                Sandee Bernklau, APRN-BC, MSN, CNP
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <!-- 2 -->
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">2:20-3:05 p.m.</div>
+                                            <div class="col-md-8">
+                                                    Eosinophilic Esophagitis <br />
+                                                    Ikuo Hirano, MD, AGAF
+                                            </div>
+                                        </div>
+                                        <br>
+                                    <!-- 3 -->
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">3:05-3:20 p.m.</div>
+                                            <div class="col-md-8">
+                                                    Break
+                                            </div>
+                                    </div>
+
+                                  </div>
+                                  </div>
+                        <!-- Header four finish -->
+
+                        <!-- Header five start -->
+                        <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                  <button
+                                    class="btn btn-link"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFive"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFive"
+                                  >
+                                    <i class="fas fa-sort-down fa-1x "></i>
+                                    Session 4B: Breakouts (Choose One) 
+                                  </button>
+                                </h2>
+                              </div>
+              
+                              <div
+                                id="collapseFive"
+                                class="collapse"
+                                aria-labelledby="headingFive"
+                                data-parent="#accordionExample"
+                              >     <div class="card-body">
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">3:05-3:20 p.m.</div>
+                                            <div class="col-md-8">
+                                                    Nutritional Concerns in IBD and Celiac Disease <br>
+                                                    Bethany Doerfler, MS, RN
+                                            </div>
+                                    </div>
+                                    <br>
+
+                                    <!-- 2 -->
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">3:20-4:05 p.m.	
+                                                </div>
+                                            <div class="col-md-8">
+                                                    Esophageal Motility and pH Studies: A Case-Based Approach <br>
+                                                    Gokul Balasubramanian, MBBS, MD
+                                            </div>
+                                    </div>
+
+                                    <br>
+                                    <!-- 3 -->
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">4:05-4:20 p.m.
+                                                </div>
+                                            <div class="col-md-8">
+                                                    Break
+                                            </div>
+                                    </div>
+
+                                  </div>
+                                  </div>
+
+                        <!-- Header five finish -->
+
+
+                        <!-- Header six start -->
+                        <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                  <button
+                                    class="btn btn-link"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseSix"
+                                    aria-expanded="true"
+                                    aria-controls="collapseSix"
+                                  >
+                                    <i class="fas fa-sort-down fa-1x "></i>
+                                    Session 4C: Breakouts (Choose One) 
+                                  </button>
+                                </h2>
+                              </div>
+              
+                              <div
+                                id="collapseSix"
+                                class="collapse"
+                                aria-labelledby="headingSix"
+                                data-parent="#accordionExample"
+                              >     <div class="card-body">
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">4:20-5:05 p.m.	
+
+                                                </div>
+                                            <div class="col-md-8">
+                                                    Nutrition in the GI Clinic (Obesity, Food Allergy, IBS) <br />
+                                                    Bethany Doerfler, MS, RDN
+                                            </div>
+                                    </div>
+
+                                    <br>
+                                    <!-- 2 -->
+                                    <div class="d-flex flex-nowrap">
+                                            <div class="col-md-4">4:20-5:05 p.m.	
+
+                                                </div>
+                                            <div class="col-md-8">
+                                                    GI Practitioners 101: Tips on Starting Your Practice as an APN/PA
+                                                    Tedra Gray, APN
+                                            </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                        <!-- Header six finish -->
+
+
+                        <h1 class="mt-4">Sunday, Aug. 22, 2018</h1>
+                        <div class="d-flex flex-nowrap">
+                              <div class="col-md-4">7:20-8:20 a.m.  </div>
+                              <div class="col-md-8">
+                                      Breakfast
+                              </div>
+                      </div>
+
+                      <!-- Header seven start -->
+
+                      <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseSeven"
+                                aria-expanded="true"
+                                aria-controls="collapseSeven"
+                              >
+                                <i class="fas fa-sort-down fa-1x "></i>
+                                Session 5: Inflammatory Bowel Disease (IBD)
+                              </button>
+                            </h2>
+                          </div>
+          
+                          <div
+                            id="collapseSeven"
+                            class="collapse"
+                            aria-labelledby="headingSeven"
+                            data-parent="#accordionExample"
+                          >     <div class="card-body">
+                              <!-- 1 -->
+                              <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">8:30-8:55 a.m.</div>
+                                    <div class="col-md-8">
+                                            Crohn's Disease <br>
+                                            Meena Prasad, MD
+                                    </div>
+                            </div>
+                            <br>
+
+                            <!-- 2 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">8:55-9:20 a.m.</div>
+                                    <div class="col-md-8">
+                                            Ulcerative Colitis <br>
+                                            Meena Prasad, MD
+                                    </div>
+                            </div>
+                            <br>
+
+                            <!-- 3 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">9:20-9:40 a.m.</div>
+                                    <div class="col-md-8">
+                                          Break
+                                    </div>
+                            </div>
+
+                            <br>
+
+                            <!-- 4 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">9:40-10:05 a.m.</div>
+                                    <div class="col-md-8">
+                                            Role of the GI NP/PA in the Inpatient and Outpatient Management of IBD
+                                            Erin Darguzas, APN
+                                    </div>
+                            </div>
+
+                            <br>
+                            <!-- 5 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">10:05-10:30 a.m.</div>
+                                    <div class="col-md-8">
+                                            Colorectal Cancer Screening and Surveillance: Best Practice <br>
+                                            Sonia Kupfer, MD
+                                    </div>
+                            </div>
+              
+                            <br>
+                            <!-- 6 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">10:30-10:55 a.m.</div>
+                                    <div class="col-md-8">
+                                            Surgical Considerations in IBD and Anorectal Disorders <br>
+                                            Gerald Grant, MD
+                                    </div>
+                            </div>
+
+                            <br>
+                            <!-- 7 -->
+
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">10:55-11:20 a.m.</div>
+                                    <div class="col-md-8">
+                                            Panel Discussion
+                                    </div>
+                            </div>
+
+
+                            <br>
+
+                            <!-- 8 -->
+                            <div class="d-flex flex-nowrap">
+                                    <div class="col-md-4">11:20-11:30 a.m.</div>
+                                    <div class="col-md-8">
+                                            Wrap Up/Closing Remarks
+                                    </div>
+                            </div>
+
+
+                              </div>
+                              </div>
+                      <!-- Header seven end -->
+                  </div>
+             </div>
+        
+           <!-- AGENDA Finish -->
+
+          <!-- CREDIT -->
+          <div
+            class="tab-pane "
+            id="nav-credit"
+            role="tabpanel"
+            aria-labelledby="nav-credit-tab"
+          >
+            <h5>Course directors</h5>
+           <ul>
+               <li>Ikuo Hirano, MD, AGAF | Professor of Medicine | Fellowship Program Director | Northwestern University School of Medicine</li>
+               <li>Tedra Gray, MSN, APRN, ANP-BC | Nurse Practitioner | Sinai Health System</li>
+           </ul>
+          <br>
+            <h5>Faculty</h5>
+           <ul>
+               <li>Gokul Balasubramanian, MBBS, MD</li>
+               <li>Sandee Bernklau, APRN-BC, MSN, CNP</li>
+               <li>Gwen Cassidy, APN</li>
+               <li>Erin Darguzas, APN</li>
+               <li>Bethany Doerfler, MS, RDN</li>
+               <li>Steve Flamm, MD</li>
+               <li>Gerald Gantt, MD</li>
+               <li>Tedra Gray, APN</li>
+               <li>Neil Gupta, MD, MPH</li>
+               <li>Ikuo Hirano, MD, AGAF</li>
+               <li>Colin Howden, MD, AGAF</li>
+               <li>Amy Kassebaum, PA-C, MMS, RD</li>
+               <li>Laurie Keefer, PhD, AGAF</li>
+               <li>Sonia Kupfer, MD</li>
+               <li>Veronica Loy, DO</li>
+               <li>Meena Prasad, MD</li>
+               <li>Greg Sayuk, MD, MPH, AGAF</li>
+               <li>Adam Stein, MD</li>
+               <li>
+                    Lisa Van Wagner, MD, MSc, RN</li>
+               <li>
+                    Nastassja Williams, MSN, APRN, FNP-C</li>
+               
+
+
+
+
+
+           </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <hr />
+            <p>
+                    For questions or help, please contact Cory Harlow at <a href="mailto:charlow@gastro.org">charlow@gastro.org.</a> 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Card Content -->
+      <div class="col-md-5">
+        <!-- * Accomidations * -->
+        <div class="container mt-3">
+          <div class="row ">
+            <div
+              class="card text-light card-case"
+              style="background-color:rgb(25, 36, 51); width: 20rem"
+            >
+              <img
+                src="https://s3.amazonaws.com/aga-lms-assets/images/NPPA_2019-1553872385525.jpg"
+                class="card-img-top"
+                alt="card header image"
+              />
+              <div class="card-body">
+                <p class="card-text pt-3">
+                  <i class="fas fa-user text-warning fa-2x"></i> NPs/PAs
+                </p>
+
+                <p class=" card-text pt-3">
+                  <i class="fas fa-map-marker-alt text-warning fa-2x"></i>
+                  Chicago, Illinois
+                </p>
+                <p class=" card-text pt-3">
+                  <i class="fas fa-calendar-alt text-warning fa-2x"></i> Aug.
+                  9-11, 2019
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>
