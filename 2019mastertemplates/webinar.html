@@ -1,273 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <!--~ FontAwesome 5 ~-->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
-      crossorigin="anonymous"
-    />
 
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Include the above in your HEAD tag  -->
-    <style type="text/css">
-      .row {
-        border-bottom: none;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <!--~ FontAwesome 5 ~-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous" />
 
-      a,
-      a:link,
-      .btn-link {
-        color: #018fd5;
-      }
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Include the above in your HEAD tag  -->
+  <style type="text/css">
+    .row {
+      border-bottom: none;
+    }
 
-      a:hover,
-      a:link:hover {
-        color: #1e385a;
-      }
+    a,
+    a:link,
+    .btn-link {
+      color: #018fd5;
+    }
 
-      .title-color {
-        color: #1e385a;
-      }
+    a:hover,
+    a:link:hover {
+      color: #1e385a;
+    }
 
-      .btn-link:hover {
-        text-decoration: none;
-      }
+    .title-color {
+      color: #1e385a;
+    }
 
-      .btn:focus {
-        background-color: transparent;
-        color: #018fd5;
-        text-decoration: none;
-      }
+    .btn-link:hover {
+      text-decoration: none;
+    }
 
-      a.btn.btn-dark:hover {
-        background-color: #faa61a !important;
-        color: #fff !important;
-        border: 1px solid #faa61a !important;
-      }
+    .btn:focus {
+      background-color: transparent;
+      color: #018fd5;
+      text-decoration: none;
+    }
 
-      .btn-orange-card:hover {
-        background-color: #faa61a !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
+    a.btn.btn-dark:hover {
+      background-color: #faa61a !important;
+      color: #fff !important;
+      border: 1px solid #faa61a !important;
+    }
 
-      .btn-green-card:hover {
-        background-color: #66952c !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
+    .btn-orange-card:hover {
+      background-color: #faa61a !important;
+      border: 1px solid #ffffff !important;
+      color: #ffffff !important;
+    }
 
-      .btn-orange-on-blue:hover {
-        background-color: #018fd5 !important;
-        border: 1px solid #018fd5 !important;
-        color: #ffffff !important;
-      }
+    .btn-green-card:hover {
+      background-color: #66952c !important;
+      border: 1px solid #ffffff !important;
+      color: #ffffff !important;
+    }
 
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #8fb0c6;
-      }
+    .btn-orange-on-blue:hover {
+      background-color: #018fd5 !important;
+      border: 1px solid #018fd5 !important;
+      color: #ffffff !important;
+    }
 
-      .btn-orange {
-        background-color: orange !important;
-        color: white !important;
-      }
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #8fb0c6;
+    }
 
-      .btn-orange:hover {
-        background: rgb(212, 144, 18) !important;
-      }
+    .btn-orange {
+      background-color: orange !important;
+      color: white !important;
+    }
 
-      .card-case {
-        margin: 0 auto;
-      }
-    </style>
-  </head>
+    .btn-orange:hover {
+      background: rgb(212, 144, 18) !important;
+    }
 
-  <body>
-    <div class="row">
-      <!-- Left Side Content -->
-      <div class="col-md-7">
-        <!-- Webinar -->
-        <!-- Copy & Paste Start -->
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a
-              class="nav-item nav-link active"
-              id="nav-home-tab"
-              data-toggle="tab"
-              href="#nav-home"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-              >Description</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-profile-tab"
-              data-toggle="tab"
-              href="#nav-profile"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-              >Pricing</a
-            >
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane show active"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
-          >
-            <!-- Description -->
-            <p>
-              Join AGA, the Endocrine Society and Clinical Care options for the
-              last complimentary webinar in a
-              <a href="#">five-part series</a> designer to improve your
-              competence in identifying and managing patients with or at risk
-              for nonalcoholic steatohepatitis (NASH), and in learning about
-              emerging NASH therapies.
-            </p>
+    .card-case {
+      margin: 0 auto;
+    }
+  </style>
+</head>
 
-            <a href="#"
-              >Hot topics in NASH: Real-world practice implications of NASH
-              trial designs</a
-            >
+<body>
+  <div class="row">
+    <!-- Left Side Content -->
+    <div class="col-md-7">
+      <!-- Tabs: Navigation Links Start -->
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true">Description</a>
 
-            <!-- Faculty-->
-            <h5 class="title-color mt-4">Faculty</h5>
-            <p>
-              Stephen A. Harrison, MD, COL(Ret.), FAASLD <br />
-              Visiting Professor of Hepatology<br />
-              University of Oxford<br />
-              Oxford, United Kingdom
-            </p>
-
-            <!-- Learning Objectives -->
-            <h5 class="title-color">Learning objectives</h5>
-            <ul>
-              <li>
-                Evaluate risk and apply appropriate methodology to characterize
-                NAFLD and diagnose NASH in individual patients.
-              </li>
-              <li>
-                Apply best practices in the management of patients with NAFLD
-                based on
-              </li>
-              evolving data on lifestyle modification and medical treatment.
-              <li>
-                Critically evaluate data on emerging therapies for NASH,
-                including evidence of reversal of fibrosis, risks, and benefits,
-                and their potential utility in the treatment of patients with
-                NASH.
-              </li>
-              <li>
-                Demonstrate an understanding of clinical trial design and
-                evaluation of endpoints in the setting of NAFLD/NASH.
-              </li>
-            </ul>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-profile"
-            role="tabpanel"
-            aria-labelledby="nav-profile-tab"
-          >
-            <!-- Pricing -->
-            <p>Free</p>
-
-            <!-- Sponsorship -->
-            <h5 class="title-color">Sponsorship</h5>
-            <p>
-              Provided by AGA in partnership with the Endocrine Society and
-              Clinical Care Options.
-            </p>
-
-            <p>
-              Supported by education grants from Gilead Sciences, Inc. and
-              Intercept Pharmaceuticals, Inc.
-            </p>
-          </div>
         </div>
-        <!-- Copy & Paste End  -->
+      </nav>
+      <!-- Tabs: Navigation Links End -->
 
-        <div class="row">
-          <div class="container">
-            <hr />
-            <p>
-              Need help? Contact
-              <a href="#">customersupport@clinicaloptions.com.</a>
-            </p>
-          </div>
+      <!-- Tabs: Navigation Content Start -->
+      <div class="tab-content" id="nav-tabContent">
+        <!-- Tab 1 -->
+        <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <!-- Description -->
+          <p>
+            Join AGA, the Endocrine Society and Clinical Care options for the
+            last complimentary webinar in a
+            <a href="#">five-part series</a> designer to improve your
+            competence in identifying and managing patients with or at risk
+            for nonalcoholic steatohepatitis (NASH), and in learning about
+            emerging NASH therapies.
+          </p>
+
+          <a href="#">Hot topics in NASH: Real-world practice implications of NASH
+            trial designs</a>
+
+          <!-- Faculty-->
+          <h5 class="title-color mt-4">Faculty</h5>
+          <p>
+            Stephen A. Harrison, MD, COL(Ret.), FAASLD <br />
+            Visiting Professor of Hepatology<br />
+            University of Oxford<br />
+            Oxford, United Kingdom
+          </p>
+
+          <!-- Learning Objectives -->
+          <h5 class="title-color">Learning objectives</h5>
+          <ul>
+            <li>
+              Evaluate risk and apply appropriate methodology to characterize
+              NAFLD and diagnose NASH in individual patients.
+            </li>
+            <li>
+              Apply best practices in the management of patients with NAFLD
+              based on
+            </li>
+            evolving data on lifestyle modification and medical treatment.
+            <li>
+              Critically evaluate data on emerging therapies for NASH,
+              including evidence of reversal of fibrosis, risks, and benefits,
+              and their potential utility in the treatment of patients with
+              NASH.
+            </li>
+            <li>
+              Demonstrate an understanding of clinical trial design and
+              evaluation of endpoints in the setting of NAFLD/NASH.
+            </li>
+          </ul>
+
+          <!-- Pricing -->
+          <h5 class="mt-5">Pricing</h5>
+          <p>Free</p>
+
+          <!-- Sponsorship -->
+          <h5 class="title-color">Sponsorship</h5>
+          <p>
+            Provided by AGA in partnership with the Endocrine Society and
+            Clinical Care Options.
+          </p>
+
+          <p>
+            Supported by education grants from Gilead Sciences, Inc. and
+            Intercept Pharmaceuticals, Inc.
+          </p>
+        </div>
+
+
+      </div>
+      <!-- Tabs: Navigation Content End -->
+
+      <!-- Footer -->
+      <div class="row">
+        <div class="container">
+          <hr />
+          <p>
+            Need help? Contact
+            <a href="mailto:customersupport@clinicaloptions.com">customersupport@clinicaloptions.com.</a>
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- Right Side Card Content -->
-      <div class="col-md-5">
-        <!-- * Accomidations * -->
+    <!-- Right Side Card Content -->
+    <div class="col-md-5">
+      <!-- Card Content -->
+      <div class="container mt-3">
+        <div class="row ">
+          <div class="card text-light card-case" style="background-color:rgb(25, 36, 51); width: 20rem">
+            <img src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/NPPA_2019.jpg" class="card-img-top"
+              alt="card header image" />
+            <div class="card-body">
+              <p class="card-text pt-3">
+                <i class="far fa-hourglass text-warning fa-2x"></i>
+                Time to complete: 45 minutes
+              </p>
 
-        <div class="container mt-3">
-          <div class="row ">
-            <div
-              class="card text-light card-case"
-              style="background-color:rgb(25, 36, 51); width: 20rem"
-            >
-              <img
-                src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/NPPA_2019.jpg"
-                class="card-img-top"
-                alt="card header image"
-              />
-              <div class="card-body">
-                <p class="card-text pt-3">
-                  <i class="far fa-hourglass text-warning fa-2x"></i>
-                  Time to complete: 45 minutes
-                </p>
+              <p class="card-text pt-3">
+                <i class="fas fa-map-marker-alt text-warning fa-2x"></i>
+                Online
+              </p>
 
-                <p class="card-text pt-3">
-                  <i class="fas fa-map-marker-alt text-warning fa-2x"></i>
-                  Online
-                </p>
+              <p class="card-text pt-3">
+                <i class="far fa-calendar-alt text-warning fa-2x"></i>
 
-                <p class="card-text pt-3">
-                  <i class="far fa-calendar-alt text-warning fa-2x"></i>
-
-                  March 20, 2019 at noon EST
-                </p>
-              </div>
+                March 20, 2019 at noon EST
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <br />
-  </body>
+  <br />
+</body>
+
 </html>
