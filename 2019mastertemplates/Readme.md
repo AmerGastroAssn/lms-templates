@@ -15,4 +15,4 @@
 # Extras
 
 - Super simple template for tabs is included as well for easy copy/paste tabs creation `./examples/main-tab-example.html`
-- Easy Copy paste template for Agenda Reveal-Tabs `./examples/agenda-tab-example.html`
+- Easy copy/paste template for Agenda Reveal-Tabs `./examples/agenda-tab-example.html`
