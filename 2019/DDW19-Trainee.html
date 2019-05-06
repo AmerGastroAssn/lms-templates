@@ -1,543 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Demand</title>
+    <!--~ FontAwesome 5 ~-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>On Demand</title>
-  <!--~ FontAwesome 5 ~-->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag  -->
+    <style type="text/css">
+      .row {
+        border-bottom: none;
+      }
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <!-- Include the above in your HEAD tag  -->
-  <style type="text/css">
-    .row {
-      border-bottom: none;
-    }
-
-    /* a,
+      /* a,
     a:link,
     .btn-link {
       color: #018fd5;
     } */
 
-    /* a:hover,
+      /* a:hover,
     a:link:hover {
       color: #1e385a;
     } */
 
-    .title-color {
-      color: #1e385a;
-    }
+      .title-color {
+        color: #1e385a;
+      }
 
-    /* .btn-link:hover {
+      /* .btn-link:hover {
       text-decoration: none;
     } */
 
-    .btn:focus {
-      background-color: transparent;
-      /* color: #018fd5; */
-      text-decoration: none;
-    }
+      .btn:focus {
+        background-color: transparent;
+        /* color: #018fd5; */
+        text-decoration: none;
+      }
 
-    a.btn.btn-dark:hover {
-      background-color: #faa61a !important;
-      color: #fff !important;
-      border: 1px solid #faa61a !important;
-    }
+      a.btn.btn-dark:hover {
+        background-color: #faa61a !important;
+        color: #fff !important;
+        border: 1px solid #faa61a !important;
+      }
 
-    .btn-orange-card:hover {
-      background-color: #faa61a !important;
-      border: 1px solid #ffffff !important;
-      color: #ffffff !important;
-    }
+      .btn-orange-card:hover {
+        background-color: #faa61a !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
 
-    .btn-green-card:hover {
-      background-color: #66952c !important;
-      border: 1px solid #ffffff !important;
-      color: #ffffff !important;
-    }
+      .btn-green-card:hover {
+        background-color: #66952c !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
 
-    .btn-orange-on-blue:hover {
-      background-color: #018fd5 !important;
-      border: 1px solid #018fd5 !important;
-      color: #ffffff !important;
-    }
+      .btn-orange-on-blue:hover {
+        background-color: #018fd5 !important;
+        border: 1px solid #018fd5 !important;
+        color: #ffffff !important;
+      }
 
-    .table-striped tbody tr:nth-of-type(odd) {
-      background-color: #8fb0c6;
-    }
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #8fb0c6;
+      }
 
-    .btn-orange {
-      background-color: orange !important;
-      color: white !important;
-    }
+      .btn-orange {
+        background-color: orange !important;
+        color: white !important;
+      }
 
-    .btn-orange:hover {
-      background: rgb(212, 144, 18) !important;
-    }
+      .btn-orange:hover {
+        background: rgb(212, 144, 18) !important;
+      }
 
-    .card-case {
-      margin: 0 auto;
-    }
-  </style>
-</head>
+      .card-case {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="row">
-    <!-- Left Side Content -->
-    <div class="col-md-7">
-      <!-- Book -->
+  <body>
+    <div class="row">
+      <!-- Left Side Content -->
+      <div class="col-md-7">
+        <!-- Book -->
 
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-            aria-controls="nav-home" aria-selected="true">Description</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-            aria-controls="nav-profile" aria-selected="false">Pricing</a>
-          <a class="nav-item nav-link" id="nav-accommodation-tab" data-toggle="tab" href="#nav-accommodation" role="tab"
-            aria-controls="nav-accommodation" aria-selected="false">Housing</a>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Description</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >Pricing</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-accommodation-tab"
+              data-toggle="tab"
+              href="#nav-accommodation"
+              role="tab"
+              aria-controls="nav-accommodation"
+              aria-selected="false"
+              >Housing</a
+            >
 
-          <a class="nav-item nav-link" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab"
-            aria-controls="nav-agenda" aria-selected="false">Agenda</a>
-          <a class="nav-item nav-link" id="nav-credit-tab" data-toggle="tab" href="#nav-credit" role="tab"
-            aria-controls="nav-credit" aria-selected="false">Credit Information</a>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <!-- Description -->
-          <p>
-            Join your colleagues at special sessions to meet the unique needs
-            of physicians who are new to the field. Participants will learn
-            about all aspects of starting a career in clinical practice or
-            research, have the opportunity to network with mentors and peers,
-            and review board material.
-          </p>
-          <p>
-            With the exception of the postgraduate course, all of the sessions
-            are free, but you must be
-            <a href="https://www.xpressreg.net/register/ddwk0519/landing.asp">registered for DDW</a>
-            to attend.
-          </p>
-          <a class="btn btn-dark"
-            style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px"
-            href="https://www.xpressreg.net/register/ddwk0519/landing.asp"><i class="fa fa-external-link"></i>
-            Register</a>
-        </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <!-- Pricing -->
-          <table class="table table-bordered">
-            <thead>
-              <tr style="background-color:#102033; color:#FFFFFF;">
-                <th colspan="1">Early bird (By April 3, 2019)</th>
-                <th colspan="1">Regular (By April 31, 2019)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th colspan="2" class="table-primary">
-                  Trainee Members (DDW registration)
-                </th>
-              </tr>
-              <tr>
-                <td>Free</td>
-                <td>$170</td>
-              </tr>
-              <tr>
-                <th colspan="2" class="table-primary">
-                  Trainee Members (postgraduate course registration)
-                </th>
-              </tr>
-              <tr>
-                <td>$90</td>
-                <td>$165</td>
-              </tr>
-              <tr>
-                <th colspan="2" class="table-primary">
-                  Nonmember Trainees (DDW registration)
-                </th>
-              </tr>
-              <tr>
-                <td>$250</td>
-                <td>$300</td>
-              </tr>
-              <tr>
-                <th colspan="2" class="table-primary">
-                  Nonmember Trainees (postgraduate course registration)
-                </th>
-              </tr>
-              <tr>
-                <td>$245</td>
-                <td>$320</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>To purchase, click "Buy Now" near the top of this page.</p>
-          <div class="card text-light" style="background-color:#1F2D40;">
-            <div class="card-body">
-              <h5>Not an AGA member?</h5>
-              <p>
-                <a href="http://www.gastro.org/join">Apply for AGA membership</a>
-                to register at the discounted member rate. Nonmember trainees
-                must complete the trainee certification form.
-              </p>
-              <p>
-                <sup>1</sup>
-                <a href="https://www.gastro.org/membership/join-aga">Your membership application</a>
-                or <a href="https://www.gastro.org/renew">renewal</a>
-                must be received by Jan. 9, 2019, to qualify to register
-                during the members-only registration period beginning on Jan.
-                16.
-              </p>
-              <p>
-                <sup>2</sup>
-                <a href="https://www.gastro.org/membership/join-aga">Your membership application</a>
-                or <a href="https://www.gastro.org/renew">renewal</a> must be
-                received by March 27, 2019, to qualify for the AGA member
-                early bird rate deadline. 16.
-              </p>
-              <p>
-                <sup>3</sup>
-                <a href="https://www.gastro.org/membership/join-aga">Your membership application</a>
-                or <a href="https://www.gastro.org/renew">renewal</a> must be
-                received by May 11, 2019, to qualify for the AGA member
-                standard rate on-site.
-              </p>
+            <a
+              class="nav-item nav-link"
+              id="nav-agenda-tab"
+              data-toggle="tab"
+              href="#nav-agenda"
+              role="tab"
+              aria-controls="nav-agenda"
+              aria-selected="false"
+              >Agenda</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-credit-tab"
+              data-toggle="tab"
+              href="#nav-credit"
+              role="tab"
+              aria-controls="nav-credit"
+              aria-selected="false"
+              >Credit Information</a
+            >
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <!-- Description -->
+            <p>
+              Join your colleagues at special sessions to meet the unique needs
+              of physicians who are new to the field. Participants will learn
+              about all aspects of starting a career in clinical practice or
+              research, have the opportunity to network with mentors and peers,
+              and review board material.
+            </p>
+            <p>
+              With the exception of the postgraduate course, all of the sessions
+              are free, but you must be
+              <a href="https://www.xpressreg.net/register/ddwk0519/landing.asp"
+                >registered for DDW</a
+              >
+              to attend.
+            </p>
+            <a
+              class="btn btn-dark"
+              style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px"
+              href="https://www.xpressreg.net/register/ddwk0519/landing.asp"
+              ><i class="fa fa-external-link"></i> Register</a
+            >
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <!-- Pricing -->
+            <table class="table table-bordered">
+              <thead>
+                <tr style="background-color:#102033; color:#FFFFFF;">
+                  <th colspan="1">Early bird (By April 3, 2019)</th>
+                  <th colspan="1">Regular (By April 31, 2019)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="2" class="table-primary">
+                    Trainee Members (DDW registration)
+                  </th>
+                </tr>
+                <tr>
+                  <td>Free</td>
+                  <td>$170</td>
+                </tr>
+                <tr>
+                  <th colspan="2" class="table-primary">
+                    Trainee Members (postgraduate course registration)
+                  </th>
+                </tr>
+                <tr>
+                  <td>$90</td>
+                  <td>$165</td>
+                </tr>
+                <tr>
+                  <th colspan="2" class="table-primary">
+                    Nonmember Trainees (DDW registration)
+                  </th>
+                </tr>
+                <tr>
+                  <td>$250</td>
+                  <td>$300</td>
+                </tr>
+                <tr>
+                  <th colspan="2" class="table-primary">
+                    Nonmember Trainees (postgraduate course registration)
+                  </th>
+                </tr>
+                <tr>
+                  <td>$245</td>
+                  <td>$320</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>To purchase, click "Buy Now" near the top of this page.</p>
+            <div class="card text-light" style="background-color:#1F2D40;">
+              <div class="card-body">
+                <h5>Not an AGA member?</h5>
+                <p>
+                  <a href="http://www.gastro.org/join"
+                    >Apply for AGA membership</a
+                  >
+                  to register at the discounted member rate. Nonmember trainees
+                  must complete the trainee certification form.
+                </p>
+                <p>
+                  <sup>1</sup>
+                  <a href="https://www.gastro.org/membership/join-aga"
+                    >Your membership application</a
+                  >
+                  or <a href="https://www.gastro.org/renew">renewal</a>
+                  must be received by Jan. 9, 2019, to qualify to register
+                  during the members-only registration period beginning on Jan.
+                  16.
+                </p>
+                <p>
+                  <sup>2</sup>
+                  <a href="https://www.gastro.org/membership/join-aga"
+                    >Your membership application</a
+                  >
+                  or <a href="https://www.gastro.org/renew">renewal</a> must be
+                  received by March 27, 2019, to qualify for the AGA member
+                  early bird rate deadline. 16.
+                </p>
+                <p>
+                  <sup>3</sup>
+                  <a href="https://www.gastro.org/membership/join-aga"
+                    >Your membership application</a
+                  >
+                  or <a href="https://www.gastro.org/renew">renewal</a> must be
+                  received by May 11, 2019, to qualify for the AGA member
+                  standard rate on-site.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- ACCOMMODATIONS -->
-        <div class="tab-pane fade" id="nav-accommodation" role="tabpanel" aria-labelledby="nav-accommodation-tab">
-          <div class="card text-dark">
-            <div class=" card-body">
-              <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h3 class="pb-3 text-center">
-                        Recommended accommodations
-                      </h3>
+          <!-- ACCOMMODATIONS -->
+          <div
+            class="tab-pane fade"
+            id="nav-accommodation"
+            role="tabpanel"
+            aria-labelledby="nav-accommodation-tab"
+          >
+            <div class="card text-dark">
+              <div class=" card-body">
+                <div class="row">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="pb-3 text-center">
+                          Recommended accommodations
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-8 p-5">
-                  <h4>
-                    <i class="fa fa-hotel" style="color:#FAA61A;"></i>
-                    Accommodations
-                  </h4>
-                  <p>
-                    We are pleased to offer discounted rates at San Diego's
-                    finest hotels. You can only take advantage of these
-                    discounts by reserving your hotel room after you register
-                    for DDW. Please visit the
-                    <a href="https://ddw.org/register/housing" target="_blank">DDW website</a>
-                    for more information.
-                  </p>
-                </div>
-                <div class="col-md-4 pt-5 pb-4">
-                  <img src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/onPeak-Stamp_grey-88x79.png"
-                    class="img-fluid" />
-                  <!--<br>
+                <div class="row">
+                  <div class="col-md-8 p-5">
+                    <h4>
+                      <i class="fa fa-hotel" style="color:#FAA61A;"></i>
+                      Accommodations
+                    </h4>
+                    <p>
+                      We are pleased to offer discounted rates at San Diego's
+                      finest hotels. You can only take advantage of these
+                      discounts by reserving your hotel room after you register
+                      for DDW. Please visit the
+                      <a href="https://ddw.org/register/housing" target="_blank"
+                        >DDW website</a
+                      >
+                      for more information.
+                    </p>
+                  </div>
+                  <div class="col-md-4 pt-5 pb-4">
+                    <img
+                      src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/onPeak-Stamp_grey-88x79.png"
+                      class="img-fluid"
+                    />
+                    <!--<br>
                                     <br>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53709.58808014283!2d-117.19889424520622!3d32.71663317331427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954a96c0fb307%3A0xa5419af040986a6e!2sDowntown%2C+San+Diego%2C+CA!5e0!3m2!1sen!2sus!4v1547221082888" width="234" height="200" frameborder="0" style="border:0" allowfullscreen=""> </iframe>-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- AGENDA -->
-        <div class="tab-pane fade" id="nav-agenda" role="tabpanel" aria-labelledby="nav-agenda-tab">
-          <div class="accordion" id="accordionExample">
-            <!-- CARD 1 -->
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    AGA Postgraduate Course
-                  </button>
-                </h2>
-              </div>
+          <!-- AGENDA -->
+          <div
+            class="tab-pane fade"
+            id="nav-agenda"
+            role="tabpanel"
+            aria-labelledby="nav-agenda-tab"
+          >
+            <div class="accordion" id="accordionExample">
+              <!-- CARD 1 -->
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      AGA Postgraduate Course
+                    </button>
+                  </h2>
+                </div>
 
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Saturday, May 18, 8:15 a.m.–5:30 p.m., and Sunday, May 19,
-                  8:30 a.m.–12:35 p.m.
-                  <br />
-                  <br />
-                  The AGA Institute’s flagship live educational offering and
-                  premier CME activity, the AGA Postgraduate Course, is a
-                  one-and-a-half-day multitopic course covering recent
-                  clinical advances that impact how care is delivered. This
-                  live CME activity is eligible for Maintenance of
-                  Certification (MOC) points.
-                  <br />
-                  <br />
-                  Saturday afternoon’s case-based breakout sessions
-                  incorporate new learning-style formats for greater
-                  audience-speaker engagement. AGA member trainees and early
-                  career GIs receive discounted pricing for this course.
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Saturday, May 18, 8:15 a.m.–5:30 p.m., and Sunday, May 19,
+                    8:30 a.m.–12:35 p.m.
+                    <br />
+                    <br />
+                    The AGA Institute’s flagship live educational offering and
+                    premier CME activity, the AGA Postgraduate Course, is a
+                    one-and-a-half-day multitopic course covering recent
+                    clinical advances that impact how care is delivered. This
+                    live CME activity is eligible for Maintenance of
+                    Certification (MOC) points.
+                    <br />
+                    <br />
+                    Saturday afternoon’s case-based breakout sessions
+                    incorporate new learning-style formats for greater
+                    audience-speaker engagement. AGA member trainees and early
+                    career GIs receive discounted pricing for this course.
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- CARD 2 -->
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    AGA Networking Hour
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Sunday, May 19, 2–3 p.m.
-                  <br />
-                  <br />
-                  This event is open to all DDW trainee and early career GI
-                  attendees and provides a casual atmosphere to network with
-                  peers. You can also meet the
-                  <a href="https://www.gastro.org/aga-leadership/committees/trainee-and-early-career-committee">AGA
-                    Trainee & Early Career Committee</a>, participate in an advocacy initiative, and learn more
-                  about all that AGA has to offer for fellows and early career
-                  GIs. This networking event will take place in the DDW
-                  Trainee and Early Career Lounge, Sails Pavilion (San Diego
-                  Convention Center). Light refreshments will be served.
+              <!-- CARD 2 -->
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn  collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      AGA Networking Hour
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Sunday, May 19, 2–3 p.m.
+                    <br />
+                    <br />
+                    This event is open to all DDW trainee and early career GI
+                    attendees and provides a casual atmosphere to network with
+                    peers. You can also meet the
+                    <a
+                      href="https://www.gastro.org/aga-leadership/committees/trainee-and-early-career-committee"
+                      >AGA Trainee & Early Career Committee</a
+                    >, participate in an advocacy initiative, and learn more
+                    about all that AGA has to offer for fellows and early career
+                    GIs. This networking event will take place in the DDW
+                    Trainee and Early Career Lounge, Sails Pavilion (San Diego
+                    Convention Center). Light refreshments will be served.
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- CARD 3 -->
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    Introduction to GI Practice: A Trainee Bootcamp
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Monday, May 20, 10–11:30 a.m.
-                  <br />
-                  <br />
-                  Trainees and early-career GIs interested in or going into
-                  private practice should attend this symposium for key tips
-                  and insights from experts for a successful career. Learn
-                  about the business of private practice GI, how to start and
-                  grow your practice, and most importantly, how to find the
-                  perfect fit for you. A “must-not-miss ‘insider tips’
-                  session".
-                  <br />
-                  <br />
-                  This activity has been approved for 1.5 AMA PRA Category 1
-                  Credits™.
+              <!-- CARD 3 -->
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      Introduction to GI Practice: A Trainee Bootcamp
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Monday, May 20, 10–11:30 a.m.
+                    <br />
+                    <br />
+                    Trainees and early-career GIs interested in or going into
+                    private practice should attend this symposium for key tips
+                    and insights from experts for a successful career. Learn
+                    about the business of private practice GI, how to start and
+                    grow your practice, and most importantly, how to find the
+                    perfect fit for you. A “must-not-miss ‘insider tips’
+                    session".
+                    <br />
+                    <br />
+                    This activity has been approved for 1.5 AMA PRA Category 1
+                    Credits™.
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- CARD 4 -->
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
-                    aria-expanded="false" aria-controls="collapseFour">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    AGA Board Review Course
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Monday, May 20, 1:30–5:30 p.m.
-                  <br />
-                  <br />
-                  This session, designed around content from the newly
-                  released DDSEP® 9, serves as a primer for third year fellows
-                  preparing for the board exam as well as a review course for
-                  others wanting to test their knowledge. Attendees will be
-                  provided with real-time feedback on their readiness to take
-                  the board exams and will also receive exclusive access to
-                  discounts on DDSEP to further prepare. This live CME
-                  activity is eligible for MOC points.
-                  <br />
-                  <br />
-                  This activity has been approved for 4 AMA PRA Category 1
-                  Credits™.
+              <!-- CARD 4 -->
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      AGA Board Review Course
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFour"
+                  class="collapse"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Monday, May 20, 1:30–5:30 p.m.
+                    <br />
+                    <br />
+                    This session, designed around content from the newly
+                    released DDSEP® 9, serves as a primer for third year fellows
+                    preparing for the board exam as well as a review course for
+                    others wanting to test their knowledge. Attendees will be
+                    provided with real-time feedback on their readiness to take
+                    the board exams and will also receive exclusive access to
+                    discounts on DDSEP to further prepare. This live CME
+                    activity is eligible for MOC points.
+                    <br />
+                    <br />
+                    This activity has been approved for 4 AMA PRA Category 1
+                    Credits™.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFive">
-                <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
-                    aria-expanded="false" aria-controls="collapseFive">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    Advancing Clinical Practice
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                  Monday, May 20, 2–3:30 p.m.
-                  <br />
-                  <br />
-                  This trainee-focused session will showcase selected
-                  abstracts from GI fellows based on quality improvement with
-                  a state-of-the-art lecture. Attendees will learn about
-                  practical examples of successful quality improvement
-                  projects for integration into their day-to-day work lives.
-                  This session will also provide guidance on how to develop a
-                  quality-improvement project and targets a specific need in
-                  the GI training program curriculum of addressing the
-                  development of quality improvement requirements within
-                  training programs.
-                  <br />
-                  <br />
-                  This activity has been approved for 1.5 AMA PRA Category 1
-                  Credits™.
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      Advancing Clinical Practice
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Monday, May 20, 2–3:30 p.m.
+                    <br />
+                    <br />
+                    This trainee-focused session will showcase selected
+                    abstracts from GI fellows based on quality improvement with
+                    a state-of-the-art lecture. Attendees will learn about
+                    practical examples of successful quality improvement
+                    projects for integration into their day-to-day work lives.
+                    This session will also provide guidance on how to develop a
+                    quality-improvement project and targets a specific need in
+                    the GI training program curriculum of addressing the
+                    development of quality improvement requirements within
+                    training programs.
+                    <br />
+                    <br />
+                    This activity has been approved for 1.5 AMA PRA Category 1
+                    Credits™.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingSix">
-                <h2 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
-                    aria-expanded="false" aria-controls="collapseSix">
-                    <i class="fas fa-sort-down fa-1x "></i>
-                    GI in the Digital Age
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                  Monday, May 20, 4-5:30 p.m.
-                  <br />
-                  <br />
-                  Social media is becoming a major part of our daily
-                  activities at both the social and professional levels. The
-                  session will provide attendees with a comprehensive review
-                  on the use of social media to build personal brand, interact
-                  with other colleagues and with patients. Experts presenting
-                  in the session will also discuss tips improve efficiency and
-                  safety when working with electronic health records (EHRs).
-                  <br />
-                  <br />
-                  This activity has been approved for 1.5 AMA PRA Category 1
-                  Credits™.
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      <i class="fas fa-sort-down fa-1x "></i>
+                      GI in the Digital Age
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseSix"
+                  class="collapse"
+                  aria-labelledby="headingSix"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Monday, May 20, 4-5:30 p.m.
+                    <br />
+                    <br />
+                    Social media is becoming a major part of our daily
+                    activities at both the social and professional levels. The
+                    session will provide attendees with a comprehensive review
+                    on the use of social media to build personal brand, interact
+                    with other colleagues and with patients. Experts presenting
+                    in the session will also discuss tips improve efficiency and
+                    safety when working with electronic health records (EHRs).
+                    <br />
+                    <br />
+                    This activity has been approved for 1.5 AMA PRA Category 1
+                    Credits™.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- AGENDA Finish -->
+
+          <!-- CREDIT -->
+          <div
+            class="tab-pane fade"
+            id="nav-credit"
+            role="tabpanel"
+            aria-labelledby="nav-credit-tab"
+          >
+            <h5>CME / Maintenance of Certification (MOC) Information</h5>
+
+            The AGA Institute is accredited by the Accreditation Council for
+            Continuing Medical Education (ACCME) to provide continuing medical
+            education for physicians.
+            <br />
+            <br />
+            <h5>Introduction to GI Practice: A Trainee Bootcamp</h5>
+            This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
+            <br />
+            <br />
+            <h5>AGA Board Review Course</h5>
+            This activity has been approved for 4 AMA PRA Category 1 Credits™.
+            <br />
+            <br />
+            <h5>
+              Advancing Clinical Practice: GI-Fellow-Directed
+              Quality-Improvement Projects
+            </h5>
+            This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
+            <br />
+            <br />
+            <h5>
+              GI in the Digital Age
+            </h5>
+            This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
+            <br />
+            <br />
+          </div>
         </div>
-        <!-- AGENDA Finish -->
 
-        <!-- CREDIT -->
-        <div class="tab-pane fade" id="nav-credit" role="tabpanel" aria-labelledby="nav-credit-tab">
-          <h5>CME / Maintenance of Certification (MOC) Information</h5>
+        <div class="row">
+          <div class="container">
+            <hr />
+            <h5>Sponsors</h5>
+            <p>Held in conjunction with Digestive Disease Week® (DDW).</p>
+            <p>
+              For program-related questions,
+              <a href="mailto:samos@gastro.org">email Sandra Amos,</a>
+              director of education programs.
+            </p>
 
-          The AGA Institute is accredited by the Accreditation Council for
-          Continuing Medical Education (ACCME) to provide continuing medical
-          education for physicians.
-          <br />
-          <br />
-          <h5>Introduction to GI Practice: A Trainee Bootcamp</h5>
-          This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
-          <br />
-          <br />
-          <h5>AGA Board Review Course</h5>
-          This activity has been approved for 4 AMA PRA Category 1 Credits™.
-          <br />
-          <br />
-          <h5>
-            Advancing Clinical Practice: GI-Fellow-Directed
-            Quality-Improvement Projects
-          </h5>
-          This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
-          <br />
-          <br />
-          <h5>
-            GI in the Digital Age
-          </h5>
-          This activity has been approved for 1.5 AMA PRA Category 1 Credits™.
-          <br />
-          <br />
+            <p>
+              For questions related to AGA membership, please contact AGA Member
+              Relations & Constituency Programs at 301-654-2055 or by
+              <a href="mailto:member@gastro.org">email</a>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="container">
-          <hr />
-          <h5>Sponsors</h5>
-          <p>Held in conjunction with Digestive Disease Week® (DDW).</p>
-          <p>
-            For program-related questions,
-            <a href="samos@gastro.org?subject=2018%20AGA%20Postgraduate%20Course">email Sandra Amos,</a>
-            director of education programs.
-          </p>
+      <!-- Right Side Card Content -->
+      <div class="col-md-5">
+        <!-- * Accomidations * -->
+        <div class="container mt-3">
+          <div class="row ">
+            <div
+              class="card text-light card-case"
+              style="background-color:rgb(25, 36, 51); width: 20rem"
+            >
+              <img
+                src="https://s3.amazonaws.com/aga-lms-assets/images/Trainee_Sessions_DDW2019-1547566659600.jpg"
+                class="card-img-top"
+                alt="card header image"
+              />
+              <div class="card-body">
+                <p class="card-text pt-3">
+                  <i class="fas fa-user text-warning fa-2x"></i> This activity
+                  is intended for gastroenterologists who are new to the field
+                  (trainees and early career GIs).
+                </p>
 
-          <p>
-            For questions related to AGA membership, please contact AGA Member
-            Relations & Constituency Programs at 301-654-2055 or by
-            <a href="mailto:member@gastro.org">email</a>
-          </p>
+                <p class=" card-text pt-3">
+                  <i class="fas fa-map-marker-alt text-warning fa-2x"></i>
+                  San Diego Convention Center San Diego, California
+                </p>
+                <p class=" card-text pt-3">
+                  <i class="fas fa-calendar-alt text-warning fa-2x"></i> May
+                  18–20, 2019
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Right Side Card Content -->
-    <div class="col-md-5">
-      <!-- * Accomidations * -->
-      <div class="container mt-3">
-        <div class="row ">
-          <div class="card text-light card-case" style="background-color:rgb(25, 36, 51); width: 20rem">
-            <img src="https://s3.amazonaws.com/aga-lms-assets/images/Trainee_Sessions_DDW2019-1547566659600.jpg"
-              class="card-img-top" alt="card header image" />
-            <div class="card-body">
-              <p class="card-text pt-3">
-                <i class="fas fa-user text-warning fa-2x"></i> This activity
-                is intended for gastroenterologists who are new to the field
-                (trainees and early career GIs).
-              </p>
-
-              <p class=" card-text pt-3">
-                <i class="fas fa-map-marker-alt text-warning fa-2x"></i>
-                San Diego Convention Center San Diego, California
-              </p>
-              <p class=" card-text pt-3">
-                <i class="fas fa-calendar-alt text-warning fa-2x"></i> May
-                18–20, 2019
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br />
-</body>
-
+    <br />
+  </body>
 </html>
