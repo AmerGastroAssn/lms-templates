@@ -1,226 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="https://s3.amazonaws.com/aga-lms-assets/styles/master_styles.css">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible"
-          content="ie=edge" />
-    <title>On Demand</title>
-    <!--~ FontAwesome 5 ~-->
-    <link rel="stylesheet"
-          href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
-          crossorigin="anonymous" />
+<div class="row">
+  <!-- Left Side Content -->
+  <div class="col-md-7">
+    <nav>
+      <div class="nav nav-tabs"
+      id="nav-tab"
+      role="tablist">
+      <a class="nav-item nav-link active"
+      id="nav-tab-one"
+      data-toggle="tab"
+      href="#nav-one"
+      role="tab"
+      aria-controls="nav-one"
+      aria-selected="true">Details</a>
+      <a class="nav-item nav-link"
+      id="nav-tab-two"
+      data-toggle="tab"
+      href="#nav-two"
+      role="tab"
+      aria-controls="nav-two"
+      aria-selected="false">Pricing</a>
+    </div>
+  </nav>
+  <div class="tab-content"
+  id="nav-tabContent">
+  <div class="tab-pane fade show active in"
+  id="nav-one"
+  role="tabpanel"
+  aria-labelledby="nav-tab-one">
+  <!-- Tab One -->
+  <p>Official AGA Institute quick-reference tools provide healthcare providers and students with instant
+    access to current guidelines and clinical care pathways in a clear, concise format. AGA Institute pocket
+    guides are available in print and digital form. AGA members can access and download digital copies of AGA
+  pocket guides for free, or purchase print copies by ordering through the Guideline Central web site. </p>
+  <p class="pt-4 text-center">
+    <a href="http://agau.gastro.org/diweb/gateway/init/1/f/catalog*2Fitem*2Feid*2FMISC-Guidebook-M"
+    target="new"
+    class="btn btn-orange"> <i class="fa fa-external-link"></i> Sign in to access</a></p>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Include the above in your HEAD tag  -->
-    <style type="text/css">
-      .row {
-        border-bottom: none;
-      }
-
-      a,
-      a:link,
-      .btn-link {
-        color: #018fd5;
-      }
-
-      a:hover,
-      a:link:hover {
-        color: #1e385a;
-      }
-
-      .title-color {
-        color: #1e385a;
-      }
-
-      .btn-link:hover {
-        text-decoration: none;
-      }
-
-      .btn:focus {
-        background-color: transparent;
-        color: #018fd5;
-        text-decoration: none;
-      }
-
-
-      .text-warning {
-        color: #FAA61A !important;
-      }
-
-      .bg-warning {
-        background-color: #FAA61A !important;
-        color: #fff;
-      }
-
-      a.btn.btn-dark:hover {
-        background-color: #faa61a !important;
-        color: #fff !important;
-        border: 1px solid #faa61a !important;
-      }
-
-      .btn-orange-card:hover {
-        background-color: #faa61a !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
-
-      .btn-green-card:hover {
-        background-color: #66952c !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
-
-      .btn-orange-on-blue:hover {
-        background-color: #018fd5 !important;
-        border: 1px solid #018fd5 !important;
-        color: #ffffff !important;
-      }
-
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #8fb0c6;
-      }
-
-      .btn-orange {
-        background-color: orange !important;
-        color: white !important;
-      }
-
-      .btn-orange:hover {
-        background: rgb(212, 144, 18) !important;
-      }
-
-      .card-case {
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="row">
-      <!-- Left Side Content -->
-      <div class="col-md-7">
-        <nav>
-          <div class="nav nav-tabs"
-               id="nav-tab"
-               role="tablist">
-            <a class="nav-item nav-link active"
-               id="nav-tab-one"
-               data-toggle="tab"
-               href="#nav-one"
-               role="tab"
-               aria-controls="nav-one"
-               aria-selected="true">Details</a>
-            <a class="nav-item nav-link"
-               id="nav-tab-two"
-               data-toggle="tab"
-               href="#nav-two"
-               role="tab"
-               aria-controls="nav-two"
-               aria-selected="false">Pricing</a>
-          </div>
-        </nav>
-        <div class="tab-content"
-             id="nav-tabContent">
-          <div class="tab-pane fade show active"
-               id="nav-one"
-               role="tabpanel"
-               aria-labelledby="nav-tab-one">
-            <!-- Tab One -->
-            <p>Official AGA Institute quick-reference tools provide healthcare providers and students with instant
-              access to current guidelines and clinical care pathways in a clear, concise format. AGA Institute pocket
-              guides are available in print and digital form. AGA members can access and download digital copies of AGA
-              pocket guides for free, or purchase print copies by ordering through the Guideline Central web site. </p>
-            <p class="pt-4 text-center">
-              <a href="http://agau.gastro.org/diweb/gateway/init/1/f/catalog*2Fitem*2Feid*2FMISC-Guidebook-M"
-                 target="new"
-                 class="btn btn-orange"> <i class="fa fa-external-link"></i> Sign in to access</a></p>
-
-          </div>
-          <!--~ Tab Two ~-->
-          <div class="tab-pane fade"
-               id="nav-two"
-               role="tabpanel"
-               aria-labelledby="nav-tab-two">
-            <!-- Tab Two Content -->
-            <table width="50%"
-                   cellpadding="0"
-                   cellspacing="0"
-                   class="table table-bordered">
-              <thead>
-                <tr style="background-color:#102033; color:#FFFFFF;">
-                  <th width="226"
-                      align="left"
-                      scope="col">
-                    Member
-                  </th>
-                  <th width="190"
-                      align="left"
-                      scope="col">
-                    Non-Member
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <td>Free (Sign in to access)</td>
-                <td>N/A (For AGA members only)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+  </div>
+  <!--~ Tab Two ~-->
+  <div class="tab-pane fade"
+  id="nav-two"
+  role="tabpanel"
+  aria-labelledby="nav-tab-two">
+  <!-- Tab Two Content -->
+  <table width="50%"
+  cellpadding="0"
+  cellspacing="0"
+  class="table table-bordered">
+  <thead>
+    <tr style="background-color:#102033; color:#FFFFFF;">
+      <th width="226"
+      align="left"
+      scope="col">
+      Member
+    </th>
+    <th width="190"
+    align="left"
+    scope="col">
+    Non-Member
+  </th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Free (Sign in to access)</td>
+    <td>N/A (For AGA members only)</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
-        <div class="row pt-5">
-          <div class="container">
-            <hr>
-            <p>If you have any questions please email the <a href="mailto:education@gastro.org">AGA Education
-                Department</a>.
-            </p>
-          </div>
-        </div>
-      </div>
+<div class="row pt-5">
+  <div class="container">
+    <hr>
+    <p>If you have any questions please email the <a href="mailto:education@gastro.org">AGA Education
+    Department</a>.
+  </p>
+</div>
+</div>
+</div>
 
-      <!-- Right Side Card Content -->
-      <div class="col-md-5">
-        <!-- * Accomidations * -->
-        <div class="container mt-3">
-          <div class="row ">
-            <div class="card text-light card-case"
-                 style="background-color:rgb(25, 36, 51); width: 20rem">
-              <img src="https://s3.amazonaws.com/aga-lms-assets/images/OnDemand_180x180-1547234219168.jpg"
-                   class="card-img-top"
-                   alt="card header image" />
-              <div class="card-body">
-                <p class="card-text pt-3">
-                  <i class="fas fa-calendar text-warning fa-2x"></i> Released: August, 2016
-                </p>
+<!-- Right Side Card Content -->
+<div class="col-md-5">
+  <!-- * Accomidations * -->
+  <div class="container mt-3">
+    <div class="row ">
+      <div class="card text-light card-case"
+      style="background-color:rgb(25, 36, 51); width: 20rem">
+      <img src="https://s3.amazonaws.com/aga-lms-assets/images/OnDemand_180x180-1547234219168.jpg"
+      class="card-img-top"
+      alt="card header image">
+      <div class="card-body">
+        <p class="card-text pt-3">
+          <i class="fas fa-calendar text-warning fa-2x"></i> Released: August, 2016
+        </p>
 
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+  </div>
+</div>
+</div>
+</div>
 
-    <br />
-  </body>
-
-</html>
+<br>
