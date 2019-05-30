@@ -1,344 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>On Demand</title>
-    <!--~ FontAwesome 5 ~-->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
-      crossorigin="anonymous"
-    />
 
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Include the above in your HEAD tag  -->
-    <style type="text/css">
-      .row {
-        border-bottom: none;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>On Demand</title>
+  <!--~ FontAwesome 5 ~-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous" />
 
-      a,
-      a:link,
-      .btn-link {
-        color: #018fd5;
-      }
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Include the above in your HEAD tag  -->
+  <style type="text/css">
+    .row {
+      border-bottom: none;
+    }
 
-      a:hover,
-      a:link:hover {
-        color: #1e385a;
-      }
+    a,
+    a:link,
+    .btn-link {
+      color: #018fd5;
+    }
 
-      .title-color {
-        color: #1e385a;
-      }
+    a:hover,
+    a:link:hover {
+      color: #1e385a;
+    }
 
-      .btn-link:hover {
-        text-decoration: none;
-      }
+    .title-color {
+      color: #1e385a;
+    }
 
-      .btn:focus {
-        background-color: transparent;
-        color: #018fd5;
-        text-decoration: none;
-      }
+    .btn-link:hover {
+      text-decoration: none;
+    }
 
-      a.btn.btn-dark:hover {
-        background-color: #faa61a !important;
-        color: #fff !important;
-        border: 1px solid #faa61a !important;
-      }
+    .btn:focus {
+      background-color: transparent;
+      color: #018fd5;
+      text-decoration: none;
+    }
 
-      .btn-orange-card:hover {
-        background-color: #faa61a !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
+    a.btn.btn-dark:hover {
+      background-color: #faa61a !important;
+      color: #fff !important;
+      border: 1px solid #faa61a !important;
+    }
 
-      .btn-green-card:hover {
-        background-color: #66952c !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
+    .btn-orange-card:hover {
+      background-color: #faa61a !important;
+      border: 1px solid #ffffff !important;
+      color: #ffffff !important;
+    }
 
-      .btn-orange-on-blue:hover {
-        background-color: #018fd5 !important;
-        border: 1px solid #018fd5 !important;
-        color: #ffffff !important;
-      }
+    .btn-green-card:hover {
+      background-color: #66952c !important;
+      border: 1px solid #ffffff !important;
+      color: #ffffff !important;
+    }
 
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #8fb0c6;
-      }
+    .btn-orange-on-blue:hover {
+      background-color: #018fd5 !important;
+      border: 1px solid #018fd5 !important;
+      color: #ffffff !important;
+    }
 
-      .btn-orange {
-        background-color: orange !important;
-        color: white !important;
-      }
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #8fb0c6;
+    }
 
-      .btn-orange:hover {
-        background: rgb(212, 144, 18) !important;
-      }
+    .btn-orange {
+      background-color: orange !important;
+      color: white !important;
+    }
 
-      .card-case {
-        margin: 0 auto;
-      }
-    </style>
-  </head>
+    .btn-orange:hover {
+      background: rgb(212, 144, 18) !important;
+    }
 
-  <body>
-    <div class="row">
-      <!-- Left Side Content -->
-      <div class="col-md-7">
-        <!-- Book -->
+    .card-case {
+      margin: 0 auto;
+    }
+  </style>
+</head>
 
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a
-              class="nav-item nav-link active"
-              id="nav-home-tab"
-              data-toggle="tab"
-              href="#nav-home"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-              >Description</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-profile-tab"
-              data-toggle="tab"
-              href="#nav-profile"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-              >Pricing</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-credit-tab"
-              data-toggle="tab"
-              href="#nav-credit"
-              role="tab"
-              aria-controls="nav-credit"
-              aria-selected="false"
-              >Credit Information</a
-            >
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane  show active"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
-          >
-            <!-- Description -->
+<body>
+  <div class="row">
+    <!-- Left Side Content -->
+    <div class="col-md-7">
+      <!-- Book -->
+
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true">Description</a>
+          <a class="nav-item nav-link" id="nav-credit-tab" data-toggle="tab" href="#nav-credit" role="tab"
+            aria-controls="nav-credit" aria-selected="false">Credit Information</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <!-- Description -->
+          <p>
+            Case-based session from the
+            <a href="http://pgcourse.gastro.org/">2018 AGA Postgraduate Course: From Abstract to Reality. </a>The AGA
+            Postgraduate Course is designed to keep you up to date in
+            a rapidly changing field. Using a variety of AGA resources you
+            will be able to distill guidelines, clinical research articles and
+            emerging technology into everyday practice.
+          </p>
+
+          <!-- Product -->
+          <h5 class="title-color">Presentations:</h5>
+          <ul>
+            <li>
+              <span class="font-weight-bold">NERD, functional heartburn and reflux hypersensitivity all cause heartburn:
+                How to separate them in clinical practice
+              </span>
+              <span class="font-italic">(approx. 1 hour and 15 minutes)</span> <br />
+              Ronnie Fass, MD and Amit Patel, MD
+            </li>
+            <br />
+
+          </ul>
+
+          <p>
+            <a href="https://www.gastro.org/news/2018-aga-postgraduate-course-resourcess">View a full listing</a>
+            of available postgraduate course resources and order the online
+            sessions today.
+          </p>
+
+          <div class="card-body" style="background-color:#F9F9F9;">
+            <h5>Product features</h5>
             <p>
-                Case-based session from the
-              <a href="http://pgcourse.gastro.org/"
-                >2018 AGA Postgraduate Course: From Abstract to Reality. </a
-              >The AGA Postgraduate Course is designed to keep you up to date in
-              a rapidly changing field. Using a variety of AGA resources you
-              will be able to distill guidelines, clinical research articles and
-              emerging technology into everyday practice.
+              <i class="fa fa-check"></i> Complete audio track of the general
+              session lectures and select breakout sessions along with all
+              slides.
             </p>
-
-            <!-- Product -->
-            <h5 class="title-color">Presentations:</h5>
-            <ul>
-              <li>
-                <span class="font-weight-bold"
-                  >NERD, functional heartburn and reflux hypersensitivity all cause heartburn: How to separate them in clinical practice
-                </span>
-                <span class="font-italic">(approx. 1 hour and 15 minutes)</span>  <br />
-                Ronnie Fass, MD and Amit Patel, MD
-              </li>
-              <br />
-              
-            </ul>
-
             <p>
-              <a
-                href="https://www.gastro.org/news/2018-aga-postgraduate-course-resourcess"
-                >View a full listing</a
-              >
-              of available postgraduate course resources and order the online
-              sessions today.
+              <i class="fa fa-check"></i> Associated quizzes can be completed
+              to earn AMA PRA Category 1 Credits™ and Maintenance of
+              Certification (MOC) points.
             </p>
-
-            <div class="card-body" style="background-color:#F9F9F9;">
-              <h4>Product features</h4>
-              <p>
-                <i class="fa fa-check"></i> Complete audio track of the general
-                session lectures and select breakout sessions along with all
-                slides.
-              </p>
-              <p>
-                <i class="fa fa-check"></i> Associated quizzes can be completed
-                to earn AMA PRA Category 1 Credits™ and Maintenance of
-                Certification (MOC) points.
-              </p>
-              <p>
-                <i class="fa fa-check"></i> Internet connection needed to watch
-                sessions on-demand.
-              </p>
-            </div>
-
-            <br />
-            <!-- Learning Objectives -->
-            <h5 class="title-color">Learning objectives</h5>
-            <ul>
-              <li>
-                Recognize how to identify underlying esophageal disorders in heartburn presentations (i.e., non-erosive reflux disease (NERD), reflux hypersensitivity (RH), functional heartburn (FH)).
-              </li>
-              <li>
-                Appropriately manage symptoms based on this recognition.
-              </li>
-            </ul>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-profile"
-            role="tabpanel"
-            aria-labelledby="nav-profile-tab"
-          >
-            <!-- Pricing -->
-            <table
-              width="50%"
-              cellpadding="0"
-              cellspacing="0"
-              class="table table-bordered"
-            >
-              <thead>
-         
-              </thead>
-              <tbody>
-                <tr class="table-primary">
-                  <td colspan="2">Member</td>
-                </tr>
-                <tr>
-                  <td colspan="2">$20</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="table-primary">Nonmember</td>
-                </tr>
-                <tr>
-                  <td colspan="2">$25</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>To purchase, click "Buy Now" near the top of this page.</p>
-          </div>
-
-          <div
-            class="tab-pane "
-            id="nav-credit"
-            role="tabpanel"
-            aria-labelledby="nav-credit-tab"
-          >
-          <h3>CME / Maintenance of Certification (MOC) Information</h3>
-            <h5>Accreditation and Designation Statement</h5>
-
-            The American Gastroenterological Association (AGA) Institute is
-            accredited by the Accreditation Council for Continuing Medical
-            Education to provide continuing medical education for physicians.
-            <br />
-            <br />
-            The AGA Institute designates this enduring material for a maximum of
-            1.5 AMA PRA Category 1 Credits™. Physicians should claim only the
-            credit commensurate with the extent of their participation in the
-            activity. 
-            <br/>
-            <br/>
-            In accordance with the ACCME’s Standards for Commercial
-            Support of Continuing Medical Education, all faculty and planning
-            partners must disclose any financial relationship(s) or other
-            relationship(s) held within the past 12 months. The AGA Institute
-            implements a mechanism to identify and resolve all conflicts of
-            interest prior to delivering the educational activity to learners.
-            <br />
-            <br />
-            <h5>MOC Statement</h5>
-
-            Successful completion of this CME activity, which includes
-            participation in the evaluation component, enables the participant
-            to earn up to 1.5 MOC points in the American Board of Internal
-            Medicine's (ABIM) Maintenance of Certification (MOC) program.
-            Participants will earn MOC points equivalent to the amount of CME
-            credits claimed for the activity. It is the CME activity provider's
-            responsibility to submit participant completion information to ACCME
-            for the purpose of granting ABIM MOC credit.
-
-            <p class="font-weight-bold">
-              MOC/CME expiration date: June 6, 2020
+            <p>
+              <i class="fa fa-check"></i> Internet connection needed to watch
+              sessions on-demand.
             </p>
-
-            <h5>Faculty Relationship and Financial Disclosures</h5>
-            <a
-              href="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/resources/2018_PG_Course_Faculty_Financial_Disclosures.pdf"
-              >Click here to view financial disclosures.
-            </a>
           </div>
+
+          <br />
+          <!-- Learning Objectives -->
+          <h5 class="title-color">Learning objectives</h5>
+          <ul>
+            <li>
+              Recognize how to identify underlying esophageal disorders in heartburn presentations (i.e., non-erosive
+              reflux disease (NERD), reflux hypersensitivity (RH), functional heartburn (FH)).
+            </li>
+            <li>
+              Appropriately manage symptoms based on this recognition.
+            </li>
+          </ul>
+
+          <h5 class="mt-5">Pricing</h5>
+          <table width="50%" cellpadding="0" cellspacing="0" class="table table-bordered">
+            <thead>
+
+            </thead>
+            <tbody>
+              <tr style="background-color:#102033; color:#FFFFFF;">
+                <th width="226" align="left" scope="col">
+                  Member
+                </th>
+                <th width="190" align="left" scope="col">
+                  Non-Member
+                </th>
+              </tr>
+              <tr>
+                <td>$20</td>
+                <td>$25</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>To purchase, click "Buy Now" near the top of this page.</p>
         </div>
 
-        <div class="row">
-          <div class="container">
-            <hr />
-            <p>
-              If you have any questions please
-              <a href="http://agau.gastro.org/diweb/catalog/item?id=2355353#"
-                >mail the AGA Education Department.</a
-              >
-            </p>
-          </div>
+        <div class="tab-pane fade" id="nav-credit" role="tabpanel" aria-labelledby="nav-credit-tab">
+          <h5>CME / Maintenance of Certification (MOC) Information</h5>
+          <h5>Accreditation and Designation Statement</h5>
+
+          The American Gastroenterological Association (AGA) Institute is
+          accredited by the Accreditation Council for Continuing Medical
+          Education to provide continuing medical education for physicians.
+          <br />
+          <br />
+          The AGA Institute designates this enduring material for a maximum of
+          1.5 AMA PRA Category 1 Credits™. Physicians should claim only the
+          credit commensurate with the extent of their participation in the
+          activity.
+          <br />
+          <br />
+          In accordance with the ACCME’s Standards for Commercial
+          Support of Continuing Medical Education, all faculty and planning
+          partners must disclose any financial relationship(s) or other
+          relationship(s) held within the past 12 months. The AGA Institute
+          implements a mechanism to identify and resolve all conflicts of
+          interest prior to delivering the educational activity to learners.
+          <br />
+          <br />
+          <h5>MOC Statement</h5>
+
+          Successful completion of this CME activity, which includes
+          participation in the evaluation component, enables the participant
+          to earn up to 1.5 MOC points in the American Board of Internal
+          Medicine's (ABIM) Maintenance of Certification (MOC) program.
+          Participants will earn MOC points equivalent to the amount of CME
+          credits claimed for the activity. It is the CME activity provider's
+          responsibility to submit participant completion information to ACCME
+          for the purpose of granting ABIM MOC credit.
+
+          <p class="font-weight-bold">
+            MOC/CME expiration date: June 6, 2020
+          </p>
+
+          <h5>Faculty Relationship and Financial Disclosures</h5>
+          <a
+            href="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/resources/2018_PG_Course_Faculty_Financial_Disclosures.pdf">Click
+            here to view financial disclosures.
+          </a>
         </div>
       </div>
 
-      <!-- Right Side Card Content -->
-      <div class="col-md-5">
-        <!-- * Accomidations * -->
-        <div class="container mt-3">
-          <div class="row ">
-            <div
-              class="card text-light card-case"
-              style="background-color:rgb(25, 36, 51); width: 20rem"
-            >
-              <img
-                src="https://s3.amazonaws.com/aga-lms-assets/images/square_blocks.jpeg"
-                class="card-img-top"
-                alt="card header image"
-              />
-              <div class="card-body">
-                <p class="card-text pt-3">
-                  <i class="fas fa-clock fa-2x text-warning"></i> Time to Complete: 1.5 hours
-                </p>
+      <div class="row">
+        <div class="container">
+          <hr />
+          <p>
+            If you have any questions please
+            <a href="mailto:education@gastro.org">email the AGA Education Department.</a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-                <p class=" card-text pt-3"><i class="fas fa-calendar-alt text-warning fa-2x""></i>  Released: June 6, 2018</p>
+    <!-- Right Side Card Content -->
+    <div class="col-md-5">
+      <!-- * Accomidations * -->
+      <div class="container mt-3">
+        <div class="row ">
+          <div class="card text-light card-case" style="background-color:rgb(25, 36, 51); width: 20rem">
+            <img src="https://s3.amazonaws.com/aga-lms-assets/images/square_blocks.jpeg" class="card-img-top"
+              alt="card header image" />
+            <div class="card-body">
+              <p class="card-text pt-3">
+                <i class="fas fa-clock fa-2x text-warning"></i> Time to Complete: 1.5 hours
+              </p>
+
+              <p class=" card-text pt-3"><i class="fas fa-calendar-alt text-warning fa-2x""></i>  Released: June 6, 2018</p>
                 <p class=" card-text pt-3"><i class="fas fa-calendar-alt text-warning fa-2x""></i>  Credit Expires: June 6, 2020</p>
               </div>
             </div>

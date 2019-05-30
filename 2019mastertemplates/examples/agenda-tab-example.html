@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Demand</title>
+    <!--~ FontAwesome 5 ~-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag  -->
+    <style type="text/css">
+      .row {
+        border-bottom: none;
+      }
+
+      a,
+      a:link,
+      .btn-link {
+        color: #018fd5;
+      }
+
+      a:hover,
+      a:link:hover {
+        color: #1e385a;
+      }
+
+      .title-color {
+        color: #1e385a;
+      }
+
+      .btn-agenda {
+        background-color: transparent !important;
+      }
+
+      .btn-agenda:hover {
+        background-color: transparent !important;
+      }
+
+      .btn-link:hover {
+        text-decoration: none;
+      }
+
+      .btn:focus {
+        background-color: transparent;
+        color: #018fd5;
+        text-decoration: none;
+      }
+
+      a.btn.btn-dark:hover {
+        background-color: #faa61a !important;
+        color: #fff !important;
+        border: 1px solid #faa61a !important;
+      }
+
+      .btn-orange-card:hover {
+        background-color: #faa61a !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
+
+      .btn-green-card:hover {
+        background-color: #66952c !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+      }
+
+      .btn-orange-on-blue:hover {
+        background-color: #018fd5 !important;
+        border: 1px solid #018fd5 !important;
+        color: #ffffff !important;
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #8fb0c6;
+      }
+
+      .btn-orange {
+        background-color: orange !important;
+        color: white !important;
+      }
+
+      .btn-orange:hover {
+        background: rgb(212, 144, 18) !important;
+      }
+
+      .card-case {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- AGENDA Start-->
+
+    <div class="accordion" id="accordionExample">
+      <!-- CARD 1 -->
+
+      <!-- Title -->
+      <div class="card">
+        <h5>Friday May 17th 2019</h5>
+        <p>5:30pm – 7:30pm</p>
+
+        <!-- Card Reveal Header -->
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button
+              class="btn btn-link btn-agenda"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <i class="fas fa-sort-down fa-1x "></i>
+              Agenda
+            </button>
+          </h5>
+        </div>
+
+        <!-- Collapsable Menu Start -->
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <!-- 1 -->
+          <div class="card-body">
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">5:30-5:55 p.m.</div>
+              <div class="col-md-8">
+                Networking with drinks and heavy hors d’oeuvres
+              </div>
+            </div>
+            <br />
+
+            <!-- Menu Contents -->
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">5:55-6 p.m.</div>
+              <div class="col-md-8">
+                Introduction and welcome <br />
+                Speaker: Dr. David Lieberman
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6-6:15 p.m.</div>
+              <div class="col-md-8">
+                The transition from fee for service to value-based care and its
+                implications for division chiefs. Speaker: Dr. John Allen
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6:15-6:20 p.m.</div>
+              <div class="col-md-8">
+                DISCUSSION
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6:20-6:35 p.m.</div>
+              <div class="col-md-8">
+                Successful models to fund and incentivize your faculty’s
+                academic productivity Speaker: Dr. Juanita Merchant
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6:35-6:40 p.m.</div>
+              <div class="col-md-8">
+                DISCUSSION
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6:40-6:55 p.m.</div>
+              <div class="col-md-8">
+                Bedside and didactic teaching: The unfunded mandate in an RVU
+                world! Speaker: Dr. Nick Shaheen
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">6:55-7:25 p.m</div>
+              <div class="col-md-8">
+                Panel discussion and Q&A <br />
+                Speaker: All presenters and Drs. Vivek Kaul and Vijay Shah
+              </div>
+            </div>
+            <br />
+            <div class="d-flex flex-nowrap">
+              <div class="col-md-4">7:25-7:30 p.m.</div>
+              <div class="col-md-8">
+                Closing remarks <br />
+                Speaker: Drs. Kaul and Shah
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Collapsable Menu End -->
+      </div>
+    </div>
+    <!-- AGENDA Finish -->
+  </body>
+</html>
