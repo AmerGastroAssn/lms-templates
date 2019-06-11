@@ -1,735 +1,615 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>On Demand</title>
-    <!--~ FontAwesome 5 ~-->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
-      crossorigin="anonymous"
-    />
+<link rel="stylesheet" href="https://s3.amazonaws.com/aga-lms-assets/styles/master_styles.css">
+<div class="row">
+  <!-- Left Side Content -->
+  <div class="col-md-12">
+    <!-- Book -->
 
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Include the above in your HEAD tag  -->
-    <style type="text/css">
-      .row {
-        border-bottom: none;
-      }
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a
+        class="nav-item nav-link active"
+        id="nav-home-tab"
+        data-toggle="tab"
+        href="#nav-home"
+        role="tab"
+        aria-controls="nav-home"
+        aria-selected="true"
+        >Description</a
+        >
+        <a
+        class="nav-item nav-link"
+        id="nav-profile-tab"
+        data-toggle="tab"
+        href="#nav-profile"
+        role="tab"
+        aria-controls="nav-profile"
+        aria-selected="false"
+        >Pricing</a
+        >
+        <a
+        class="nav-item nav-link"
+        id="nav-accommodation-tab"
+        data-toggle="tab"
+        href="#nav-accommodation"
+        role="tab"
+        aria-controls="nav-accommodation"
+        aria-selected="false"
+        >Housing</a
+        >
 
-      a,
-      a:link,
-      .btn-link {
-        color: #018fd5;
-      }
+        <a
+        class="nav-item nav-link"
+        id="nav-agenda-tab"
+        data-toggle="tab"
+        href="#nav-agenda"
+        role="tab"
+        aria-controls="nav-agenda"
+        aria-selected="false"
+        >Agenda</a
+        >
+        <a
+        class="nav-item nav-link"
+        id="nav-credit-tab"
+        data-toggle="tab"
+        href="#nav-credit"
+        role="tab"
+        aria-controls="nav-credit"
+        aria-selected="false"
+        >Faculty</a
+        >
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+      class="tab-pane fade show active"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+      >
+      <div class="d-flex flex-nowraps">
+        <!-- col7 -->
+        <div class="col-md-7">
+          <!-- Description -->
+          <p>
+            GI division chiefs are invited to attend a private AGA evening
+            reception and symposium during Digestive Disease Week® (DDW)®
+            on Friday, May 17. Meet and network with fellow division
+            chiefs, and members of the AGA Governing Board and senior
+            leadership over heavy hors d’oeuvres. Discuss the changing
+            business of healthcare and its implications for GI academics.
+            The event is limited to only 50 attendees. Be sure to register
+            early.
+          </p>
 
-      a:hover,
-      a:link:hover {
-        color: #1e385a;
-      }
-
-      .title-color {
-        color: #1e385a;
-      }
-
-      .btn-agenda {
-        background-color: transparent !important;
-      }
-
-      .btn-agenda:hover {
-        background-color: transparent !important;
-      }
-
-      .btn-link:hover {
-        text-decoration: none;
-      }
-
-      .btn:focus {
-        background-color: transparent;
-        color: #018fd5;
-        text-decoration: none;
-      }
-
-      a.btn.btn-dark:hover {
-        background-color: #faa61a !important;
-        color: #fff !important;
-        border: 1px solid #faa61a !important;
-      }
-
-      .btn-orange-card:hover {
-        background-color: #faa61a !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
-
-      .btn-green-card:hover {
-        background-color: #66952c !important;
-        border: 1px solid #ffffff !important;
-        color: #ffffff !important;
-      }
-
-      .btn-orange-on-blue:hover {
-        background-color: #018fd5 !important;
-        border: 1px solid #018fd5 !important;
-        color: #ffffff !important;
-      }
-
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: #8fb0c6;
-      }
-
-      .btn-orange {
-        background-color: orange !important;
-        color: white !important;
-      }
-
-      .btn-orange:hover {
-        background: rgb(212, 144, 18) !important;
-      }
-
-      .card-case {
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="row">
-      <!-- Left Side Content -->
-      <div class="col-md-12">
-        <!-- Book -->
-
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a
-              class="nav-item nav-link active"
-              id="nav-home-tab"
-              data-toggle="tab"
-              href="#nav-home"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-              >Description</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-profile-tab"
-              data-toggle="tab"
-              href="#nav-profile"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-              >Pricing</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-accommodation-tab"
-              data-toggle="tab"
-              href="#nav-accommodation"
-              role="tab"
-              aria-controls="nav-accommodation"
-              aria-selected="false"
-              >Housing</a
-            >
-
-            <a
-              class="nav-item nav-link"
-              id="nav-agenda-tab"
-              data-toggle="tab"
-              href="#nav-agenda"
-              role="tab"
-              aria-controls="nav-agenda"
-              aria-selected="false"
-              >Agenda</a
-            >
-            <a
-              class="nav-item nav-link"
-              id="nav-credit-tab"
-              data-toggle="tab"
-              href="#nav-credit"
-              role="tab"
-              aria-controls="nav-credit"
-              aria-selected="false"
-              >Faculty</a
-            >
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
+          <a
+          class="btn btn-dark"
+          style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px"
+          href="https://www.xpressreg.net/register/ddwk0519/landing.asp"
+          ><i class="fa fa-external-link"></i> Register</a
           >
-            <div class="d-flex flex-nowraps">
-              <!-- col7 -->
-              <div class="col-md-7">
-                <!-- Description -->
-                <p>
-                  GI division chiefs are invited to attend a private AGA evening
-                  reception and symposium during Digestive Disease Week® (DDW)®
-                  on Friday, May 17. Meet and network with fellow division
-                  chiefs, and members of the AGA Governing Board and senior
-                  leadership over heavy hors d’oeuvres. Discuss the changing
-                  business of healthcare and its implications for GI academics.
-                  The event is limited to only 50 attendees. Be sure to register
-                  early.
-                </p>
 
-                <a
-                  class="btn btn-dark"
-                  style="background-color:#1E385A; color:#fff; border-radius:0; padding:10px; margin-bottom: 10px"
-                  href="https://www.xpressreg.net/register/ddwk0519/landing.asp"
-                  ><i class="fa fa-external-link"></i> Register</a
-                >
-
-                <!-- Learning Objectives -->
-                <h5 class="title-color">Learning objectives</h5>
-                <p>
-                  Attendees will discuss the changing business of healthcare and
-                  its implications for GI academics.
-                </p>
-                <ul>
-                  <li>
-                    Transitioning from fee-for-service to value-based care and
-                    its meaning for GI division chiefs.
-                  </li>
-                  <li>
-                    Successful models to fund and incentivize your faculty’s
-                    academic productivity.
-                  </li>
-                  <li>
-                    Beside and didactic teaching: the unfunded mandate in a
-                    relative value unit (RVU) world.
-                  </li>
-                </ul>
-              </div>
-              <!-- col7-end -->
-              <!-- col5 -->
-              <div class="col-md-5">
-                <div class="container mt-3">
-                  <div class="row ">
-                    <div
-                      class="card text-light card-case"
-                      style="background-color:rgb(25, 36, 51); width: 20rem"
-                    >
-                      <img
-                        src="https://s3.amazonaws.com/aga-lms-assets/images/GI_Division_Chief_180x180-1551707799971.jpg"
-                        class="card-img-top"
-                        alt="card header image"
-                      />
-                      <div class="card-body">
-                        <p class="card-text pt-3">
-                          <i class="fas fa-user text-warning fa-2x"></i>
-                          Training directors/GI division chiefs
-                        </p>
-
-                        <p class=" card-text pt-3">
-                          <i
-                            class="fas fa-map-marker-alt text-warning fa-2x"
-                          ></i>
-                          San Diego, California
-                        </p>
-                        <p class=" card-text pt-3">
-                          <i class="fas fa-calendar-alt text-warning fa-2x"></i>
-                          May 17, 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- col5-end -->
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-profile"
-            role="tabpanel"
-            aria-labelledby="nav-profile-tab"
-          >
-            <!-- Pricing -->
-            <table class="table table-bordered">
-              <thead></thead>
-              <tbody>
-                <tr class="table-primary">
-                  <th>
-                    Member
-                  </th>
-                  <th>Nonmember</th>
-                </tr>
-                <tr>
-                  <td>Free</td>
-                  <td>Free</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- ACCOMMODATIONS -->
-          <div
-            class="tab-pane fade"
-            id="nav-accommodation"
-            role="tabpanel"
-            aria-labelledby="nav-accommodation-tab"
-          >
-            <div class="card text-dark">
-              <div class="card-body">
-                <div class="row">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h3 class="pb-3 text-center">
-                          Recommended accommodations
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-8 p-5">
-                    <h4>
-                      <i class="fa fa-hotel" style="color:#FAA61A;"></i>
-                      Accommodations
-                    </h4>
-                    <p>
-                      Hilton Bayfront <br />
-                      Indigo 2A <br />
-                      1 Park Boulevard<br />
-                      San Diego, CA<br />
-                    </p>
-                    <p>
-                      Friday, May 17, 2019<br />
-                      5:30–7:30 p.m.
-                    </p>
-                  </div>
-                  <div class="col-md-4 pt-5 pb-4"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- AGENDA -->
-          <div
-            class="tab-pane fade"
-            id="nav-agenda"
-            role="tabpanel"
-            aria-labelledby="nav-agenda-tab"
-          >
-            <div class="accordion" id="accordionExample">
-              <!-- CARD 1 -->
-              <div class="card">
-                <h5>Friday May 17th 2019</h5>
-                <p>5:30pm – 7:30pm</p>
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link btn-agenda"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i class="fas fa-sort-down fa-1x "></i>
-                      Agenda
-                    </button>
-                  </h5>
-                </div>
-
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <!-- 1 -->
-                  <div class="card-body">
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">5:30-5:55 p.m.</div>
-                      <div class="col-md-8">
-                        Networking with drinks and heavy hors d’oeuvres
-                      </div>
-                    </div>
-                    <br />
-                    <!-- 2 -->
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">5:55-6 p.m.</div>
-                      <div class="col-md-8">
-                        Introduction and welcome <br />
-                        Speaker: Dr. David Lieberman
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6-6:15 p.m.</div>
-                      <div class="col-md-8">
-                        The transition from fee for service to value-based care
-                        and its implications for division chiefs. Speaker: Dr.
-                        John Allen
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6:15-6:20 p.m.</div>
-                      <div class="col-md-8">
-                        DISCUSSION
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6:20-6:35 p.m.</div>
-                      <div class="col-md-8">
-                        Successful models to fund and incentivize your faculty’s
-                        academic productivity Speaker: Dr. Juanita Merchant
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6:35-6:40 p.m.</div>
-                      <div class="col-md-8">
-                        DISCUSSION
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6:40-6:55 p.m.</div>
-                      <div class="col-md-8">
-                        Bedside and didactic teaching: The unfunded mandate in
-                        an RVU world! Speaker: Dr. Nick Shaheen
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">6:55-7:25 p.m</div>
-                      <div class="col-md-8">
-                        Panel discussion and Q&A <br />
-                        Speaker: All presenters and Drs. Vivek Kaul and Vijay
-                        Shah
-                      </div>
-                    </div>
-                    <br />
-                    <div class="d-flex flex-nowrap">
-                      <div class="col-md-4">7:25-7:30 p.m.</div>
-                      <div class="col-md-8">
-                        Closing remarks <br />
-                        Speaker: Drs. Kaul and Shah
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- AGENDA Finish -->
-
-          <!-- FACULTY -->
-          <div
-            class="tab-pane fade"
-            id="nav-credit"
-            role="tabpanel"
-            aria-labelledby="nav-credit-tab"
-          >
-            <div class="container">
-              <div class="row">
-                <h5 class="text-center">Moderators</h5>
-                <br />
-                <div class="d-flex flex-nowraps">
-                  <!-- Moderators -->
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_Vijay_Shah_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class="ml-3 col-md-8">
-                        <h5>
-                          Vijay Shah, MD, Professor of Medicine, Chair of
-                          Gastroenterology and Hepatology, Mayo Medical Center,
-                          Rochester, Minnesota
-                        </h5>
-                        Dr. Vijay Shah received his undergraduate, medical and
-                        clinical training at Northwestern University. He
-                        obtained advanced clinical and research postdoctoral
-                        fellowship training at Yale University. He has
-                        maintained an NIH-funded program at Mayo Clinic for more
-                        than 20 years which focuses broadly on alcohol related
-                        liver disease, cirrhosis, portal hypertension and its
-                        complications with approximately 200 peer review
-                        publications in prestigious journals such as
-                        <span class="font-italic"
-                          >Journal of Clinical Investigation, Nature,
-                          Proceedings of National Academy of Science, New
-                          England Journal of Medicine and others.  Dr. Shah is a
-                          member of the prestigious American Society of Clinical
-                          Investigation.</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_VKaul_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class=" ml-3 col-md-8">
-                        <h5>
-                          Vivek Kaul, MD, AGAF, Segal-Watson Professor of
-                          Medicine, Chief, Division of GI/Hepatology, University
-                          of Rochester Medical Center, Rochester, New York
-                        </h5>
-                        Dr. Vivek Kaul’s clinical, research and medical
-                        education efforts are focused in therapeutic endoscopy,
-                        interventional endoscopic ultrasound, advanced
-                        endoscopic retrograde cholangiopancreatography (ERCP)
-                        and esophageal endotherapy for Barrett’s and esophageal
-                        cancer. He has specific expertise in complex
-                        interventional endoscopy, especially in the patient with
-                        GI-cancer. He co-directs the Developmental Endoscopy lab
-                        at URMC which is dedicated to education, training and
-                        innovation in endoscopy. Dr. Kaul serves on several
-                        national committees with the ASGE and the ACG and is a
-                        past governor of the ACG for northern New York. He is
-                        chair of the ACG Innovation & Technology Committee. He
-                        is a reviewer for several journals, is a sought-after
-                        speaker and has authored several publications in the
-                        field of interventional endoscopy. He also serves on the
-                        WGO endoscopy committee and regularly lectures and
-                        shares his endoscopy expertise at centers in the U.S.
-                        and around the world.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <h5 class="text-center">Faculty</h5>
-                <br />
-                <div class="d-flex flex-nowraps">
-                  <!-- Faculty 1-->
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_David_Lieberman_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class="ml-3 col-md-8">
-                        <h5>
-                          David Lieberman, MD, AGAF, President, AGA, Professor
-                          of Medicine, Chief, Division of Gastroenterology and
-                          Hepatology, Oregon Health and Science University,
-                          Portland, Oregon
-                        </h5>
-                        Dr. Lieberman is internationally recognized as an expert
-                        on colon cancer screening. He is chairman for VA
-                        Cooperative Study # 380, which utilized colonoscopy to
-                        screen asymptomatic subjects for colorectal cancer with
-                        publications in New England Journal of Medicine, JAMA,
-                        Annals of Internal Medicine and Gastroenterology. Dr.
-                        Lieberman was the Chairman of the Multi-Society Task
-                        Force on Colorectal Cancer (2006-2012), and authored
-                        colon cancer screening recommendations in 2008 (CA and
-                        Gastroenterology) and polyp surveillance guideline in
-                        2012 as well as colonoscopy quality indicators in 2007,
-                        and review of colorectal cancer screening (JAMA 2016).
-                        <br />
-                        <br />
-                        He was the director of the Clinical Outcomes Research
-                        Initiative (CORI), supported by NIH 1999-2016. The
-                        project has created a national endoscopic data
-                        repository for research, with more than 90 peer-reviewed
-                        publications to date. Previously, Dr. Lieberman served
-                        as a member of the National Commission on Digestive
-                        Diseases from 2006-2008, president of the American
-                        Society for Gastrointestinal Endoscopy (ASGE) in
-                        2001-2002, and associate editor of Gastroenterology
-                        (2011-2013). He was the Clinical Research Councilor on
-                        the board of the American Gastroenterological
-                        Association (AGA), and presidential officer from
-                        2016-2020. He is currently President of AGA (2018-2019).
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_John_Allen_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class="ml-3 col-md-8">
-                        <h5>
-                          John I. Allen, MD, MBA, AGAF, Clinical Professor of
-                          Medicine, University of Michigan Health System, Ann
-                          Arbor, Michigan
-                        </h5>
-                        Dr. Allen completed internal medicine and
-                        gastroenterology training at the University of Minnesota
-                        and spent 10 years on its academic faculty. In 1991, he
-                        joined a private gastroenterology practice and helped
-                        build Minnesota Gastroenterology into one of the largest
-                        GI practices in the country. He led development of their
-                        nationally known quality program. In 2013, he left
-                        practice to become clinical chief of digestive diseases
-                        and Professor of Medicine at Yale University School of
-                        Medicine. In 2016, he was recruited to the University of
-                        Michigan School of Medicine (Ann Arbor, Michigan) as a
-                        clinical professor of medicine and is now the chief
-                        clinical officer of the University of Michigan Medical
-                        Group, helping oversee the $2 billion ambulatory care
-                        infrastructure at Michigan Medicine.
-                        <br />
-                        <br />
-                        Dr. Allen was president of AGA from 2014-2015. He is
-                        current editor in chief of GI and Hepatology News and
-                        remains active in local, state and national medical
-                        politics. Dr. Allen is the 2019 recipient of AGA’s
-                        Julius Friedenwald Medal.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <h5></h5>
-                <div class="d-flex flex-nowraps">
-                  <!-- Faculty 2-->
-
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_JMerchant_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class="ml-3 col-md-8">
-                        <h5>
-                          Juanita L. Merchant, MD, PhD, Professor of Medicine,
-                          Chief, Division of Gastroenterology, University of
-                          Arizona College of Medicine, Tucson, Arizona
-                        </h5>
-                        Dr. Juanita Merchant joined the faculty at the
-                        University of Arizona College of Medicine – Tucson in
-                        July 2018 as professor of medicine in the UA Department
-                        of Medicine and chief of the UA Division of
-                        Gastroenterology and Hepatology. Dr. Merchant earned her
-                        MD and PhD at Yale University School of Medicine (MSTP),
-                        has written or co-written more than 120 peer-reviewed
-                        research publications, and is editor or co-editor of
-                        four books and several book chapters. In 2016, she was
-                        appointed to the Board of Scientific Counselors for the
-                        National Institute of Diabetes and Digestive and Kidney
-                        Diseases and was recently elected to the National
-                        Academy of Medicine Council. She is also a co-PI on the
-                        NIH-AGA FORWARD program developed to increase the number
-                        of academic gastroenterologists from under-represented
-                        groups. Dr. Merchant served as MSTP associate director
-                        at the University of Michigan and is also a member of
-                        the national advisory committee for the Harold Amos
-                        Medical Faculty Development Program. She has remained
-                        continuously funded by NIH for her work on gastrin and
-                        neuroendocrine tumors; hedgehog signaling and gastric
-                        cancer; and transcriptional control mechanisms in colon
-                        cancer.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="d-flex flex-nowraps">
-                      <div class="col-md-4">
-                        <img
-                          src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_NShaheen_120x120.jpg"
-                          alt="Generic placeholder image"
-                          class="mr-3 img-fluid img-thumbnail"
-                          style="max-width:8rem;"
-                        />
-                      </div>
-                      <div class="ml-3 col-md-8">
-                        <h5>
-                          Nicholas J. Shaheen, MD, MPH, AGAF, Bozymski-Heizer
-                          Distinguished Professor of Medicine, Chief of the
-                          Division of Gastroenterology and Hepatology,
-                          University of North Carolina School of Medicine,
-                          Chapel Hill, North Carolina
-                        </h5>
-                        Dr. Nicholas J. Shaheen’s research and clinical
-                        interests center on gastroesophageal reflux disease
-                        (GERD), and pre-cancerous and cancerous conditions of
-                        the esophagus. He has a clinical and research interest
-                        in early detection and treatment of cancerous and
-                        precancerous lesions of the esophagus. He has authored
-                        more than 300 publications in these areas. Dr. Shaheen
-                        is author of multiple national guidelines in Barrett’s
-                        esophagus, GERD and eosinophilic esophagitis. He has
-                        served as senior associate editor for the American
-                        Journal of Gastroenterology, and on multiple other
-                        editorial boards. Dr. Shaheen receives research funding
-                        from the National Institutes of Health, multiple
-                        societies, and private and public foundations.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Learning Objectives -->
+          <h5 class="title-color">Learning objectives</h5>
+          <p>
+            Attendees will discuss the changing business of healthcare and
+            its implications for GI academics.
+          </p>
+          <ul>
+            <li>
+              Transitioning from fee-for-service to value-based care and
+              its meaning for GI division chiefs.
+            </li>
+            <li>
+              Successful models to fund and incentivize your faculty’s
+              academic productivity.
+            </li>
+            <li>
+              Beside and didactic teaching: the unfunded mandate in a
+              relative value unit (RVU) world.
+            </li>
+          </ul>
         </div>
+        <!-- col7-end -->
+        <!-- col5 -->
+        <div class="col-md-5">
+          <div class="container mt-3">
+            <div class="row ">
+              <div
+              class="card text-light card-case"
+              style="background-color:rgb(25, 36, 51); width: 20rem"
+              >
+              <img
+              src="https://s3.amazonaws.com/aga-lms-assets/images/GI_Division_Chief_180x180-1551707799971.jpg"
+              class="card-img-top"
+              alt="card header image"
+              />
+              <div class="card-body">
+                <p class="card-text pt-3">
+                  <i class="fas fa-user text-warning fa-2x"></i>
+                  Training directors/GI division chiefs
+                </p>
 
-        <div class="row">
-          <div class="container">
-            <hr />
-            <p>
-              Please contact Kelsey Brandon, AGA Practice and Quality
-              Coordinator, at
-              <a href="mailto:kbrandon@gastro.org">kbrandon@gastro.org</a>.
-            </p>
+                <p class=" card-text pt-3">
+                  <i
+                  class="fas fa-map-marker-alt text-warning fa-2x"
+                  ></i>
+                  San Diego, California
+                </p>
+                <p class=" card-text pt-3">
+                  <i class="fas fa-calendar-alt text-warning fa-2x"></i>
+                  May 17, 2019
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- col5-end -->
+    </div>
+  </div>
+  <div
+  class="tab-pane fade"
+  id="nav-profile"
+  role="tabpanel"
+  aria-labelledby="nav-profile-tab"
+  >
+  <!-- Pricing -->
+  <table class="table table-bordered">
+    <thead></thead>
+    <tbody>
+      <tr class="table-primary">
+        <th>
+          Member
+        </th>
+        <th>Nonmember</th>
+      </tr>
+      <tr>
+        <td>Free</td>
+        <td>Free</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-      <!-- Right Side Card Content -->
+<!-- ACCOMMODATIONS -->
+<div
+class="tab-pane fade"
+id="nav-accommodation"
+role="tabpanel"
+aria-labelledby="nav-accommodation-tab"
+>
+<div class="card text-dark">
+  <div class="card-body">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="pb-3 text-center">
+              Recommended accommodations
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 p-5">
+        <h4>
+          <i class="fa fa-hotel" style="color:#FAA61A;"></i>
+          Accommodations
+        </h4>
+        <p>
+          Hilton Bayfront <br />
+          Indigo 2A <br />
+          1 Park Boulevard<br />
+          San Diego, CA<br />
+        </p>
+        <p>
+          Friday, May 17, 2019<br />
+          5:30–7:30 p.m.
+        </p>
+      </div>
+      <div class="col-md-4 pt-5 pb-4"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- AGENDA -->
+<div
+class="tab-pane fade"
+id="nav-agenda"
+role="tabpanel"
+aria-labelledby="nav-agenda-tab"
+>
+<div class="accordion" id="accordionExample">
+  <!-- CARD 1 -->
+  <div class="card">
+    <h5>Friday May 17th 2019</h5>
+    <p>5:30pm – 7:30pm</p>
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button
+        class="btn btn-link btn-agenda"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+        >
+        <i class="fas fa-sort-down fa-1x "></i>
+        Agenda
+      </button>
+    </h5>
+  </div>
+
+  <div
+  id="collapseOne"
+  class="collapse show"
+  aria-labelledby="headingOne"
+  data-parent="#accordionExample"
+  >
+  <!-- 1 -->
+  <div class="card-body">
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">5:30-5:55 p.m.</div>
+      <div class="col-md-8">
+        Networking with drinks and heavy hors d’oeuvres
+      </div>
+    </div>
+    <br />
+    <!-- 2 -->
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">5:55-6 p.m.</div>
+      <div class="col-md-8">
+        Introduction and welcome <br />
+        Speaker: Dr. David Lieberman
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6-6:15 p.m.</div>
+      <div class="col-md-8">
+        The transition from fee for service to value-based care
+        and its implications for division chiefs. Speaker: Dr.
+        John Allen
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6:15-6:20 p.m.</div>
+      <div class="col-md-8">
+        DISCUSSION
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6:20-6:35 p.m.</div>
+      <div class="col-md-8">
+        Successful models to fund and incentivize your faculty’s
+        academic productivity Speaker: Dr. Juanita Merchant
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6:35-6:40 p.m.</div>
+      <div class="col-md-8">
+        DISCUSSION
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6:40-6:55 p.m.</div>
+      <div class="col-md-8">
+        Bedside and didactic teaching: The unfunded mandate in
+        an RVU world! Speaker: Dr. Nick Shaheen
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">6:55-7:25 p.m</div>
+      <div class="col-md-8">
+        Panel discussion and Q&A <br />
+        Speaker: All presenters and Drs. Vivek Kaul and Vijay
+        Shah
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-nowrap">
+      <div class="col-md-4">7:25-7:30 p.m.</div>
+      <div class="col-md-8">
+        Closing remarks <br />
+        Speaker: Drs. Kaul and Shah
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- AGENDA Finish -->
+
+<!-- FACULTY -->
+<div
+class="tab-pane fade"
+id="nav-credit"
+role="tabpanel"
+aria-labelledby="nav-credit-tab"
+>
+<div class="container">
+  <div class="row">
+    <h5 class="text-center">Moderators</h5>
+    <br />
+    <div class="d-flex flex-nowraps">
+      <!-- Moderators -->
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_Vijay_Shah_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class="ml-3 col-md-8">
+            <h5>
+              Vijay Shah, MD, Professor of Medicine, Chair of
+              Gastroenterology and Hepatology, Mayo Medical Center,
+              Rochester, Minnesota
+            </h5>
+            Dr. Vijay Shah received his undergraduate, medical and
+            clinical training at Northwestern University. He
+            obtained advanced clinical and research postdoctoral
+            fellowship training at Yale University. He has
+            maintained an NIH-funded program at Mayo Clinic for more
+            than 20 years which focuses broadly on alcohol related
+            liver disease, cirrhosis, portal hypertension and its
+            complications with approximately 200 peer review
+            publications in prestigious journals such as
+            <span class="font-italic"
+            >Journal of Clinical Investigation, Nature,
+            Proceedings of National Academy of Science, New
+            England Journal of Medicine and others.  Dr. Shah is a
+            member of the prestigious American Society of Clinical
+            Investigation.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_VKaul_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class=" ml-3 col-md-8">
+            <h5>
+              Vivek Kaul, MD, AGAF, Segal-Watson Professor of
+              Medicine, Chief, Division of GI/Hepatology, University
+              of Rochester Medical Center, Rochester, New York
+            </h5>
+            Dr. Vivek Kaul’s clinical, research and medical
+            education efforts are focused in therapeutic endoscopy,
+            interventional endoscopic ultrasound, advanced
+            endoscopic retrograde cholangiopancreatography (ERCP)
+            and esophageal endotherapy for Barrett’s and esophageal
+            cancer. He has specific expertise in complex
+            interventional endoscopy, especially in the patient with
+            GI-cancer. He co-directs the Developmental Endoscopy lab
+            at URMC which is dedicated to education, training and
+            innovation in endoscopy. Dr. Kaul serves on several
+            national committees with the ASGE and the ACG and is a
+            past governor of the ACG for northern New York. He is
+            chair of the ACG Innovation & Technology Committee. He
+            is a reviewer for several journals, is a sought-after
+            speaker and has authored several publications in the
+            field of interventional endoscopy. He also serves on the
+            WGO endoscopy committee and regularly lectures and
+            shares his endoscopy expertise at centers in the U.S.
+            and around the world.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <h5 class="text-center">Faculty</h5>
+    <br />
+    <div class="d-flex flex-nowraps">
+      <!-- Faculty 1-->
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_David_Lieberman_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class="ml-3 col-md-8">
+            <h5>
+              David Lieberman, MD, AGAF, President, AGA, Professor
+              of Medicine, Chief, Division of Gastroenterology and
+              Hepatology, Oregon Health and Science University,
+              Portland, Oregon
+            </h5>
+            Dr. Lieberman is internationally recognized as an expert
+            on colon cancer screening. He is chairman for VA
+            Cooperative Study # 380, which utilized colonoscopy to
+            screen asymptomatic subjects for colorectal cancer with
+            publications in New England Journal of Medicine, JAMA,
+            Annals of Internal Medicine and Gastroenterology. Dr.
+            Lieberman was the Chairman of the Multi-Society Task
+            Force on Colorectal Cancer (2006-2012), and authored
+            colon cancer screening recommendations in 2008 (CA and
+            Gastroenterology) and polyp surveillance guideline in
+            2012 as well as colonoscopy quality indicators in 2007,
+            and review of colorectal cancer screening (JAMA 2016).
+            <br />
+            <br />
+            He was the director of the Clinical Outcomes Research
+            Initiative (CORI), supported by NIH 1999-2016. The
+            project has created a national endoscopic data
+            repository for research, with more than 90 peer-reviewed
+            publications to date. Previously, Dr. Lieberman served
+            as a member of the National Commission on Digestive
+            Diseases from 2006-2008, president of the American
+            Society for Gastrointestinal Endoscopy (ASGE) in
+            2001-2002, and associate editor of Gastroenterology
+            (2011-2013). He was the Clinical Research Councilor on
+            the board of the American Gastroenterological
+            Association (AGA), and presidential officer from
+            2016-2020. He is currently President of AGA (2018-2019).
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_John_Allen_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class="ml-3 col-md-8">
+            <h5>
+              John I. Allen, MD, MBA, AGAF, Clinical Professor of
+              Medicine, University of Michigan Health System, Ann
+              Arbor, Michigan
+            </h5>
+            Dr. Allen completed internal medicine and
+            gastroenterology training at the University of Minnesota
+            and spent 10 years on its academic faculty. In 1991, he
+            joined a private gastroenterology practice and helped
+            build Minnesota Gastroenterology into one of the largest
+            GI practices in the country. He led development of their
+            nationally known quality program. In 2013, he left
+            practice to become clinical chief of digestive diseases
+            and Professor of Medicine at Yale University School of
+            Medicine. In 2016, he was recruited to the University of
+            Michigan School of Medicine (Ann Arbor, Michigan) as a
+            clinical professor of medicine and is now the chief
+            clinical officer of the University of Michigan Medical
+            Group, helping oversee the $2 billion ambulatory care
+            infrastructure at Michigan Medicine.
+            <br />
+            <br />
+            Dr. Allen was president of AGA from 2014-2015. He is
+            current editor in chief of GI and Hepatology News and
+            remains active in local, state and national medical
+            politics. Dr. Allen is the 2019 recipient of AGA’s
+            Julius Friedenwald Medal.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <h5></h5>
+    <div class="d-flex flex-nowraps">
+      <!-- Faculty 2-->
+
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_JMerchant_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class="ml-3 col-md-8">
+            <h5>
+              Juanita L. Merchant, MD, PhD, Professor of Medicine,
+              Chief, Division of Gastroenterology, University of
+              Arizona College of Medicine, Tucson, Arizona
+            </h5>
+            Dr. Juanita Merchant joined the faculty at the
+            University of Arizona College of Medicine – Tucson in
+            July 2018 as professor of medicine in the UA Department
+            of Medicine and chief of the UA Division of
+            Gastroenterology and Hepatology. Dr. Merchant earned her
+            MD and PhD at Yale University School of Medicine (MSTP),
+            has written or co-written more than 120 peer-reviewed
+            research publications, and is editor or co-editor of
+            four books and several book chapters. In 2016, she was
+            appointed to the Board of Scientific Counselors for the
+            National Institute of Diabetes and Digestive and Kidney
+            Diseases and was recently elected to the National
+            Academy of Medicine Council. She is also a co-PI on the
+            NIH-AGA FORWARD program developed to increase the number
+            of academic gastroenterologists from under-represented
+            groups. Dr. Merchant served as MSTP associate director
+            at the University of Michigan and is also a member of
+            the national advisory committee for the Harold Amos
+            Medical Faculty Development Program. She has remained
+            continuously funded by NIH for her work on gastrin and
+            neuroendocrine tumors; hedgehog signaling and gastric
+            cancer; and transcriptional control mechanisms in colon
+            cancer.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex flex-nowraps">
+          <div class="col-md-4">
+            <img
+            src="http://media.mycrowdwisdom.com.s3.amazonaws.com/aga/images/19GIChiefs_NShaheen_120x120.jpg"
+            alt="Generic placeholder image"
+            class="mr-3 img-fluid img-thumbnail"
+            style="max-width:8rem;"
+            />
+          </div>
+          <div class="ml-3 col-md-8">
+            <h5>
+              Nicholas J. Shaheen, MD, MPH, AGAF, Bozymski-Heizer
+              Distinguished Professor of Medicine, Chief of the
+              Division of Gastroenterology and Hepatology,
+              University of North Carolina School of Medicine,
+              Chapel Hill, North Carolina
+            </h5>
+            Dr. Nicholas J. Shaheen’s research and clinical
+            interests center on gastroesophageal reflux disease
+            (GERD), and pre-cancerous and cancerous conditions of
+            the esophagus. He has a clinical and research interest
+            in early detection and treatment of cancerous and
+            precancerous lesions of the esophagus. He has authored
+            more than 300 publications in these areas. Dr. Shaheen
+            is author of multiple national guidelines in Barrett’s
+            esophagus, GERD and eosinophilic esophagitis. He has
+            served as senior associate editor for the American
+            Journal of Gastroenterology, and on multiple other
+            editorial boards. Dr. Shaheen receives research funding
+            from the National Institutes of Health, multiple
+            societies, and private and public foundations.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="container">
+    <hr />
+    <p>
+      Please contact Kelsey Brandon, AGA Practice and Quality
+      Coordinator, at
+      <a href="mailto:kbrandon@gastro.org">kbrandon@gastro.org</a>.
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- Right Side Card Content -->
       <!-- <div class="col-md-5">
         <div class="container mt-3">
           <div class="row ">
@@ -764,5 +644,3 @@
     </div>
 
     <br />
-  </body>
-</html>

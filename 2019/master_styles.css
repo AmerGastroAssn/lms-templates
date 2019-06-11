@@ -1,0 +1,83 @@
+.row {
+  border-bottom: none;
+}
+
+.btn-link {
+  color: #018fd5;
+}
+
+a.header-item, a.header-item:hover {
+  color: #fff;
+}
+
+div#nav-tabContent a, div.twenty-five.last a {
+  color: #337ab7;
+}
+
+.title-color {
+  color: #337ab7;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  background-color: transparent;
+  color: #018fd5;
+  text-decoration: none;
+}
+
+.text-warning {
+  color: #faa61a !important;
+}
+
+.bg-warning {
+  background-color: #faa61a !important;
+  color: #fff;
+}
+
+a.btn.btn-dark:hover {
+  background-color: #faa61a !important;
+  color: #fff !important;
+  border: 1px solid #faa61a !important;
+}
+
+.btn-orange-card:hover {
+  background-color: #faa61a !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn-green-card:hover {
+  background-color: #66952c !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn-orange-on-blue:hover {
+  background-color: #018fd5 !important;
+  border: 1px solid #018fd5 !important;
+  color: #ffffff !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #8fb0c6;
+}
+
+.btn-orange {
+  background-color: orange !important;
+  color: white !important;
+}
+
+.btn-orange:hover {
+  background: rgb(212, 144, 18) !important;
+}
+
+.card-case {
+  margin: 0 auto;
+}
+
+#footer a {
+  color: #fff !important;
+}
